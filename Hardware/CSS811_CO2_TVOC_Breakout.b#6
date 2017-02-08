@@ -56,7 +56,7 @@
 <layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
 <layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
 <layer number="48" name="Document" color="7" fill="1" visible="no" active="yes"/>
-<layer number="49" name="Reference" color="7" fill="1" visible="no" active="yes"/>
+<layer number="49" name="Reference" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
 <layer number="51" name="tDocu" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="52" name="bDocu" color="7" fill="1" visible="no" active="yes"/>
@@ -803,7 +803,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <smd name="8" x="1.1" y="0" dx="0.7" dy="0.4" layer="1" rot="R180"/>
 <smd name="9" x="1.1" y="0.6" dx="0.7" dy="0.4" layer="1" rot="R180"/>
 <smd name="10" x="1.1" y="1.2" dx="0.7" dy="0.4" layer="1" rot="R180"/>
-<smd name="EP" x="0" y="0" dx="1.2" dy="2.45" layer="1" stop="no" thermals="no" cream="no"/>
+<smd name="EP" x="0" y="0" dx="1.1" dy="2.45" layer="1" stop="no" thermals="no" cream="no"/>
 <text x="-1.27" y="2.54" size="0.6096" layer="25" ratio="20">&gt;Name</text>
 <text x="-1.27" y="-3.175" size="0.6096" layer="27" ratio="20">&gt;Value</text>
 <polygon width="0.001" layer="51">
@@ -1036,9 +1036,9 @@ These rules have been curated by SparkFuns DFM commitee. After doing much resear
 <attribute name="PROD_ID" value="N/A" x="15.24" y="10.16" size="0.8128" layer="27" ratio="15" rot="R270" display="off"/>
 <attribute name="SF_ID" value="SEN-00250" x="15.24" y="10.16" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
-<element name="LOGO4" library="SparkFun-Aesthetics" package="OSHW-LOGO-S" value="OSHW-LOGOS" x="15.24" y="20.32" rot="MR0"/>
+<element name="LOGO4" library="SparkFun-Aesthetics" package="OSHW-LOGO-S" value="OSHW-LOGOS" x="22.86" y="5.08"/>
 <element name="FD1" library="SparkFun-Aesthetics" package="FIDUCIAL-1X2" value="FIDUCIAL1X2" x="0.762" y="17.018"/>
-<element name="FD2" library="SparkFun-Aesthetics" package="FIDUCIAL-1X2" value="FIDUCIAL1X2" x="20.32" y="1.27"/>
+<element name="FD2" library="SparkFun-Aesthetics" package="FIDUCIAL-1X2" value="FIDUCIAL1X2" x="15.24" y="2.54"/>
 <element name="R2" library="SparkFun-Resistors" package="0603" value="4.7k" x="8.89" y="6.985">
 <attribute name="PROD_ID" value="RES-07857" x="8.89" y="6.985" size="1.778" layer="27" font="vector" ratio="15" display="off"/>
 </element>
@@ -1064,7 +1064,7 @@ These rules have been curated by SparkFuns DFM commitee. After doing much resear
 <vertex x="0" y="0"/>
 </polygon>
 <contactref element="U2" pad="EP"/>
-<via x="6.35" y="13.335" extent="1-16" drill="0.381"/>
+<via x="6.35" y="13.97" extent="1-16" drill="0.381"/>
 <via x="10.922" y="10.16" extent="1-16" drill="0.381"/>
 <via x="12.7" y="13.335" extent="1-16" drill="0.381"/>
 </signal>
@@ -1091,15 +1091,18 @@ These rules have been curated by SparkFuns DFM commitee. After doing much resear
 <contactref element="J8" pad="3"/>
 <contactref element="R13" pad="1"/>
 <wire x1="8.29" y1="12.03" x2="7.874" y2="12.446" width="0.1778" layer="1"/>
-<wire x1="7.874" y1="12.446" x2="7.62" y2="12.446" width="0.1778" layer="1"/>
-<wire x1="7.62" y1="12.446" x2="3.683" y2="12.446" width="0.1778" layer="1"/>
 <wire x1="3.683" y1="12.446" x2="3.39" y2="12.153" width="0.1778" layer="1"/>
 <wire x1="3.39" y1="11.43" x2="3.39" y2="12.153" width="0.1778" layer="1"/>
 <wire x1="11.43" y1="1.27" x2="7.62" y2="5.08" width="0.1778" layer="16"/>
-<wire x1="7.62" y1="5.08" x2="7.62" y2="12.446" width="0.1778" layer="16"/>
-<via x="7.62" y="12.446" extent="1-16" drill="0.381"/>
+<via x="6.35" y="12.7" extent="1-16" drill="0.381"/>
 <contactref element="U2" pad="9"/>
 <wire x1="8.29" y1="11.26" x2="8.29" y2="12.03" width="0.1778" layer="1"/>
+<wire x1="7.874" y1="12.446" x2="6.604" y2="12.446" width="0.1778" layer="1"/>
+<wire x1="6.604" y1="12.446" x2="6.35" y2="12.7" width="0.1778" layer="1"/>
+<wire x1="3.683" y1="12.446" x2="6.096" y2="12.446" width="0.1778" layer="1"/>
+<wire x1="6.096" y1="12.446" x2="6.35" y2="12.7" width="0.1778" layer="1"/>
+<wire x1="7.62" y1="5.08" x2="7.62" y2="11.43" width="0.1778" layer="16"/>
+<wire x1="7.62" y1="11.43" x2="6.35" y2="12.7" width="0.1778" layer="16"/>
 </signal>
 <signal name="3.3V">
 <contactref element="J8" pad="2"/>

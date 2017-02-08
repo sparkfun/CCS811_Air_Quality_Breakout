@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.5.0">
+<eagle version="7.7.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="yes"/>
@@ -8283,6 +8283,8 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="U$1" library="SparkX" deviceset="SPARKX-LOGO" device="3"/>
 <part name="J2" library="SparkFun-Connectors" deviceset="CONN_03" device="1X03_NO_SILK"/>
 <part name="U2" library="SparkX" deviceset="CCS811" device="PRODUCTION"/>
+<part name="R1" library="SparkFun-Resistors" deviceset="100KOHM" device="-0603-1/10W-1%" value="100k"/>
+<part name="GND1" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -8292,7 +8294,7 @@ Max Current: 14mA (estimate)</text>
 <text x="38.862" y="140.462" size="2.54" layer="94" rot="MR180" align="top-left">CCS811 - Air Quality (CO2, TVOC)</text>
 <text x="91.44" y="88.9" size="1.27" layer="97" align="center-left">JP2 sets the I2C 
 address of the CCS811.
-Open - 0x5B
+Open (Default) - 0x5B
 Closed - 0x5A</text>
 <text x="175.26" y="132.08" size="1.27" layer="97" align="center-right">JP5 connects 
 SDA and SCL 
@@ -8308,9 +8310,9 @@ SparkFun SKU: SEN-00250</text>
 <instance part="FRAME1" gate="G$1" x="0" y="0"/>
 <instance part="FRAME1" gate="V" x="147.32" y="0"/>
 <instance part="GND3" gate="1" x="45.72" y="93.98"/>
-<instance part="J8" gate="G$1" x="215.9" y="78.74" rot="MR0"/>
-<instance part="GND18" gate="1" x="205.74" y="71.12" rot="MR0"/>
-<instance part="SUPPLY21" gate="G$1" x="205.74" y="88.9" rot="MR0"/>
+<instance part="J8" gate="G$1" x="218.44" y="93.98" rot="MR0"/>
+<instance part="GND18" gate="1" x="208.28" y="86.36" rot="MR0"/>
+<instance part="SUPPLY21" gate="G$1" x="208.28" y="104.14" rot="MR0"/>
 <instance part="R13" gate="G$1" x="170.18" y="116.84" rot="R90"/>
 <instance part="R14" gate="G$1" x="185.42" y="116.84" rot="R90"/>
 <instance part="SUPPLY18" gate="G$1" x="177.8" y="134.62"/>
@@ -8334,8 +8336,10 @@ SparkFun SKU: SEN-00250</text>
 <instance part="FD2" gate="G$1" x="238.76" y="27.94"/>
 <instance part="R2" gate="G$1" x="38.1" y="119.38" rot="R90"/>
 <instance part="U$1" gate="G$1" x="132.08" y="7.62"/>
-<instance part="J2" gate="J$1" x="218.44" y="55.88" rot="R180"/>
+<instance part="J2" gate="J$1" x="220.98" y="71.12" rot="R180"/>
 <instance part="U2" gate="U1" x="60.96" y="109.22"/>
+<instance part="R1" gate="G$1" x="210.82" y="60.96" rot="R90"/>
+<instance part="GND1" gate="1" x="210.82" y="50.8" rot="MR0"/>
 </instances>
 <busses>
 </busses>
@@ -8349,8 +8353,8 @@ SparkFun SKU: SEN-00250</text>
 </segment>
 <segment>
 <pinref part="J8" gate="G$1" pin="1"/>
-<wire x1="208.28" y1="76.2" x2="205.74" y2="76.2" width="0.1524" layer="91"/>
-<wire x1="205.74" y1="76.2" x2="205.74" y2="73.66" width="0.1524" layer="91"/>
+<wire x1="210.82" y1="91.44" x2="208.28" y2="91.44" width="0.1524" layer="91"/>
+<wire x1="208.28" y1="91.44" x2="208.28" y2="88.9" width="0.1524" layer="91"/>
 <pinref part="GND18" gate="1" pin="GND"/>
 </segment>
 <segment>
@@ -8363,12 +8367,17 @@ SparkFun SKU: SEN-00250</text>
 <pinref part="GND9" gate="1" pin="GND"/>
 <wire x1="88.9" y1="83.82" x2="88.9" y2="86.36" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="R1" gate="G$1" pin="1"/>
+<pinref part="GND1" gate="1" pin="GND"/>
+<wire x1="210.82" y1="53.34" x2="210.82" y2="55.88" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="SCL" class="0">
 <segment>
 <pinref part="J8" gate="G$1" pin="4"/>
-<wire x1="208.28" y1="83.82" x2="203.2" y2="83.82" width="0.1524" layer="91"/>
-<label x="203.2" y="83.82" size="1.27" layer="95" rot="MR0" xref="yes"/>
+<wire x1="210.82" y1="99.06" x2="205.74" y2="99.06" width="0.1524" layer="91"/>
+<label x="205.74" y="99.06" size="1.27" layer="95" rot="MR0" xref="yes"/>
 </segment>
 <segment>
 <wire x1="73.66" y1="114.3" x2="76.2" y2="114.3" width="0.1524" layer="91"/>
@@ -8385,8 +8394,8 @@ SparkFun SKU: SEN-00250</text>
 <net name="SDA" class="0">
 <segment>
 <pinref part="J8" gate="G$1" pin="3"/>
-<wire x1="208.28" y1="81.28" x2="203.2" y2="81.28" width="0.1524" layer="91"/>
-<label x="203.2" y="81.28" size="1.27" layer="95" rot="MR0" xref="yes"/>
+<wire x1="210.82" y1="96.52" x2="205.74" y2="96.52" width="0.1524" layer="91"/>
+<label x="205.74" y="96.52" size="1.27" layer="95" rot="MR0" xref="yes"/>
 </segment>
 <segment>
 <wire x1="73.66" y1="116.84" x2="76.2" y2="116.84" width="0.1524" layer="91"/>
@@ -8403,8 +8412,8 @@ SparkFun SKU: SEN-00250</text>
 <net name="3.3V" class="0">
 <segment>
 <pinref part="J8" gate="G$1" pin="2"/>
-<wire x1="208.28" y1="78.74" x2="205.74" y2="78.74" width="0.1524" layer="91"/>
-<wire x1="205.74" y1="78.74" x2="205.74" y2="88.9" width="0.1524" layer="91"/>
+<wire x1="210.82" y1="93.98" x2="208.28" y2="93.98" width="0.1524" layer="91"/>
+<wire x1="208.28" y1="93.98" x2="208.28" y2="104.14" width="0.1524" layer="91"/>
 <pinref part="SUPPLY21" gate="G$1" pin="3.3V"/>
 </segment>
 <segment>
@@ -8450,8 +8459,8 @@ SparkFun SKU: SEN-00250</text>
 <pinref part="U2" gate="U1" pin="!RESET!"/>
 </segment>
 <segment>
-<wire x1="210.82" y1="53.34" x2="208.28" y2="53.34" width="0.1524" layer="91"/>
-<label x="208.28" y="53.34" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="213.36" y1="68.58" x2="208.28" y2="68.58" width="0.1524" layer="91"/>
+<label x="208.28" y="68.58" size="1.27" layer="95" rot="R180" xref="yes"/>
 <pinref part="J2" gate="J$1" pin="3"/>
 </segment>
 </net>
@@ -8489,8 +8498,8 @@ SparkFun SKU: SEN-00250</text>
 <pinref part="U2" gate="U1" pin="!INT!"/>
 </segment>
 <segment>
-<wire x1="210.82" y1="55.88" x2="208.28" y2="55.88" width="0.1524" layer="91"/>
-<label x="208.28" y="55.88" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="213.36" y1="71.12" x2="208.28" y2="71.12" width="0.1524" layer="91"/>
+<label x="208.28" y="71.12" size="1.27" layer="95" rot="R180" xref="yes"/>
 <pinref part="J2" gate="J$1" pin="2"/>
 </segment>
 </net>
@@ -8501,9 +8510,13 @@ SparkFun SKU: SEN-00250</text>
 <pinref part="U2" gate="U1" pin="!WAKE!"/>
 </segment>
 <segment>
-<wire x1="210.82" y1="58.42" x2="208.28" y2="58.42" width="0.1524" layer="91"/>
-<label x="208.28" y="58.42" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="213.36" y1="73.66" x2="210.82" y2="73.66" width="0.1524" layer="91"/>
+<label x="208.28" y="73.66" size="1.27" layer="95" rot="R180" xref="yes"/>
 <pinref part="J2" gate="J$1" pin="1"/>
+<pinref part="R1" gate="G$1" pin="2"/>
+<wire x1="210.82" y1="73.66" x2="208.28" y2="73.66" width="0.1524" layer="91"/>
+<wire x1="210.82" y1="66.04" x2="210.82" y2="73.66" width="0.1524" layer="91"/>
+<junction x="210.82" y="73.66"/>
 </segment>
 </net>
 <net name="NTC_SENSE" class="0">

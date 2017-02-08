@@ -1064,7 +1064,7 @@ These rules have been curated by SparkFuns DFM commitee. After doing much resear
 <vertex x="0" y="0"/>
 </polygon>
 <contactref element="U2" pad="EP"/>
-<via x="6.35" y="13.97" extent="1-16" drill="0.381"/>
+<via x="6.35" y="13.716" extent="1-16" drill="0.381"/>
 <via x="10.922" y="10.16" extent="1-16" drill="0.381"/>
 <via x="12.7" y="13.335" extent="1-16" drill="0.381"/>
 </signal>
