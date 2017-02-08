@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.7.0">
+<eagle version="7.6.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="yes"/>
@@ -168,10 +168,10 @@
 <text x="16.51" y="2.794" size="1.016" layer="22" font="vector" ratio="15" rot="MR90" align="center-left">GND</text>
 <text x="9.017" y="16.51" size="1.2065" layer="21" ratio="15" align="center">CCS811</text>
 <text x="17.399" y="10.287" size="1.016" layer="16" ratio="20" rot="MR270" align="bottom-center">X10</text>
-<text x="4.191" y="10.287" size="0.889" layer="22" ratio="15" rot="MR90" align="bottom-center">JP2</text>
+<text x="4.191" y="10.287" size="0.889" layer="22" ratio="15" rot="MR90" align="bottom-center">ADDR</text>
 <text x="17.399" y="10.287" size="1.016" layer="21" ratio="15" rot="R90" align="bottom-center">NTC</text>
 <text x="9.017" y="14.859" size="1.016" layer="21" ratio="15" align="center">Air Quality</text>
-<text x="0.381" y="10.287" size="0.889" layer="22" ratio="15" rot="MR90" align="bottom-center">JP1</text>
+<text x="0.381" y="10.287" size="0.889" layer="22" ratio="15" rot="MR90" align="bottom-center">I2C PU</text>
 <text x="6.35" y="2.794" size="1.016" layer="21" font="vector" ratio="15" rot="R90" align="center-left">!WAK</text>
 <text x="3.81" y="2.794" size="1.016" layer="21" font="vector" ratio="15" rot="R90" align="center-left">!INT</text>
 <text x="1.27" y="2.794" size="1.016" layer="21" font="vector" ratio="15" rot="R90" align="center-left">!RST</text>
@@ -192,10 +192,10 @@
 <text x="34.798" y="2.794" size="1.016" layer="22" font="vector" ratio="15" rot="MR90" align="center-left">GND</text>
 <text x="27.305" y="16.51" size="1.2065" layer="21" ratio="15" align="center">CCS811</text>
 <text x="35.687" y="10.287" size="1.016" layer="16" ratio="20" rot="MR270" align="bottom-center">X10</text>
-<text x="22.479" y="10.287" size="0.889" layer="22" ratio="15" rot="MR90" align="bottom-center">JP2</text>
+<text x="22.479" y="10.287" size="0.889" layer="22" ratio="15" rot="MR90" align="bottom-center">ADDR</text>
 <text x="35.687" y="10.287" size="1.016" layer="21" ratio="15" rot="R90" align="bottom-center">NTC</text>
 <text x="27.305" y="14.859" size="1.016" layer="21" ratio="15" align="center">Air Quality</text>
-<text x="18.669" y="10.287" size="0.889" layer="22" ratio="15" rot="MR90" align="bottom-center">JP1</text>
+<text x="18.669" y="10.287" size="0.889" layer="22" ratio="15" rot="MR90" align="bottom-center">I2C PU</text>
 <text x="24.638" y="2.794" size="1.016" layer="21" font="vector" ratio="15" rot="R90" align="center-left">!WAK</text>
 <text x="22.098" y="2.794" size="1.016" layer="21" font="vector" ratio="15" rot="R90" align="center-left">!INT</text>
 <text x="19.558" y="2.794" size="1.016" layer="21" font="vector" ratio="15" rot="R90" align="center-left">!RST</text>
@@ -216,10 +216,10 @@
 <text x="53.086" y="2.794" size="1.016" layer="22" font="vector" ratio="15" rot="MR90" align="center-left">GND</text>
 <text x="45.593" y="16.51" size="1.2065" layer="21" ratio="15" align="center">CCS811</text>
 <text x="53.975" y="10.287" size="1.016" layer="16" ratio="20" rot="MR270" align="bottom-center">X10</text>
-<text x="40.767" y="10.287" size="0.889" layer="22" ratio="15" rot="MR90" align="bottom-center">JP2</text>
+<text x="40.767" y="10.287" size="0.889" layer="22" ratio="15" rot="MR90" align="bottom-center">ADDR</text>
 <text x="53.975" y="10.287" size="1.016" layer="21" ratio="15" rot="R90" align="bottom-center">NTC</text>
 <text x="45.593" y="14.859" size="1.016" layer="21" ratio="15" align="center">Air Quality</text>
-<text x="36.957" y="10.287" size="0.889" layer="22" ratio="15" rot="MR90" align="bottom-center">JP1</text>
+<text x="36.957" y="10.287" size="0.889" layer="22" ratio="15" rot="MR90" align="bottom-center">I2C PU</text>
 <text x="42.926" y="2.794" size="1.016" layer="21" font="vector" ratio="15" rot="R90" align="center-left">!WAK</text>
 <text x="40.386" y="2.794" size="1.016" layer="21" font="vector" ratio="15" rot="R90" align="center-left">!INT</text>
 <text x="37.846" y="2.794" size="1.016" layer="21" font="vector" ratio="15" rot="R90" align="center-left">!RST</text>
@@ -240,10 +240,10 @@
 <text x="16.51" y="21.082" size="1.016" layer="22" font="vector" ratio="15" rot="MR90" align="center-left">GND</text>
 <text x="9.017" y="34.798" size="1.2065" layer="21" ratio="15" align="center">CCS811</text>
 <text x="17.399" y="28.575" size="1.016" layer="16" ratio="20" rot="MR270" align="bottom-center">X10</text>
-<text x="4.191" y="28.575" size="0.889" layer="22" ratio="15" rot="MR90" align="bottom-center">JP2</text>
+<text x="4.191" y="28.575" size="0.889" layer="22" ratio="15" rot="MR90" align="bottom-center">ADDR</text>
 <text x="17.399" y="28.575" size="1.016" layer="21" ratio="15" rot="R90" align="bottom-center">NTC</text>
 <text x="9.017" y="33.147" size="1.016" layer="21" ratio="15" align="center">Air Quality</text>
-<text x="0.381" y="28.575" size="0.889" layer="22" ratio="15" rot="MR90" align="bottom-center">JP1</text>
+<text x="0.381" y="28.575" size="0.889" layer="22" ratio="15" rot="MR90" align="bottom-center">I2C PU</text>
 <text x="6.35" y="21.082" size="1.016" layer="21" font="vector" ratio="15" rot="R90" align="center-left">!WAK</text>
 <text x="3.81" y="21.082" size="1.016" layer="21" font="vector" ratio="15" rot="R90" align="center-left">!INT</text>
 <text x="1.27" y="21.082" size="1.016" layer="21" font="vector" ratio="15" rot="R90" align="center-left">!RST</text>
@@ -264,10 +264,10 @@
 <text x="34.798" y="21.082" size="1.016" layer="22" font="vector" ratio="15" rot="MR90" align="center-left">GND</text>
 <text x="27.305" y="34.798" size="1.2065" layer="21" ratio="15" align="center">CCS811</text>
 <text x="35.687" y="28.575" size="1.016" layer="16" ratio="20" rot="MR270" align="bottom-center">X10</text>
-<text x="22.479" y="28.575" size="0.889" layer="22" ratio="15" rot="MR90" align="bottom-center">JP2</text>
+<text x="22.479" y="28.575" size="0.889" layer="22" ratio="15" rot="MR90" align="bottom-center">ADDR</text>
 <text x="35.687" y="28.575" size="1.016" layer="21" ratio="15" rot="R90" align="bottom-center">NTC</text>
 <text x="27.305" y="33.147" size="1.016" layer="21" ratio="15" align="center">Air Quality</text>
-<text x="18.669" y="28.575" size="0.889" layer="22" ratio="15" rot="MR90" align="bottom-center">JP1</text>
+<text x="18.669" y="28.575" size="0.889" layer="22" ratio="15" rot="MR90" align="bottom-center">I2C PU</text>
 <text x="24.638" y="21.082" size="1.016" layer="21" font="vector" ratio="15" rot="R90" align="center-left">!WAK</text>
 <text x="22.098" y="21.082" size="1.016" layer="21" font="vector" ratio="15" rot="R90" align="center-left">!INT</text>
 <text x="19.558" y="21.082" size="1.016" layer="21" font="vector" ratio="15" rot="R90" align="center-left">!RST</text>
@@ -288,10 +288,10 @@
 <text x="53.086" y="21.082" size="1.016" layer="22" font="vector" ratio="15" rot="MR90" align="center-left">GND</text>
 <text x="45.593" y="34.798" size="1.2065" layer="21" ratio="15" align="center">CCS811</text>
 <text x="53.975" y="28.575" size="1.016" layer="16" ratio="20" rot="MR270" align="bottom-center">X10</text>
-<text x="40.767" y="28.575" size="0.889" layer="22" ratio="15" rot="MR90" align="bottom-center">JP2</text>
+<text x="40.767" y="28.575" size="0.889" layer="22" ratio="15" rot="MR90" align="bottom-center">ADDR</text>
 <text x="53.975" y="28.575" size="1.016" layer="21" ratio="15" rot="R90" align="bottom-center">NTC</text>
 <text x="45.593" y="33.147" size="1.016" layer="21" ratio="15" align="center">Air Quality</text>
-<text x="36.957" y="28.575" size="0.889" layer="22" ratio="15" rot="MR90" align="bottom-center">JP1</text>
+<text x="36.957" y="28.575" size="0.889" layer="22" ratio="15" rot="MR90" align="bottom-center">I2C PU</text>
 <text x="42.926" y="21.082" size="1.016" layer="21" font="vector" ratio="15" rot="R90" align="center-left">!WAK</text>
 <text x="40.386" y="21.082" size="1.016" layer="21" font="vector" ratio="15" rot="R90" align="center-left">!INT</text>
 <text x="37.846" y="21.082" size="1.016" layer="21" font="vector" ratio="15" rot="R90" align="center-left">!RST</text>
@@ -312,10 +312,10 @@
 <text x="16.51" y="39.37" size="1.016" layer="22" font="vector" ratio="15" rot="MR90" align="center-left">GND</text>
 <text x="9.017" y="53.086" size="1.2065" layer="21" ratio="15" align="center">CCS811</text>
 <text x="17.399" y="46.863" size="1.016" layer="16" ratio="20" rot="MR270" align="bottom-center">X10</text>
-<text x="4.191" y="46.863" size="0.889" layer="22" ratio="15" rot="MR90" align="bottom-center">JP2</text>
+<text x="4.191" y="46.863" size="0.889" layer="22" ratio="15" rot="MR90" align="bottom-center">ADDR</text>
 <text x="17.399" y="46.863" size="1.016" layer="21" ratio="15" rot="R90" align="bottom-center">NTC</text>
 <text x="9.017" y="51.435" size="1.016" layer="21" ratio="15" align="center">Air Quality</text>
-<text x="0.381" y="46.863" size="0.889" layer="22" ratio="15" rot="MR90" align="bottom-center">JP1</text>
+<text x="0.381" y="46.863" size="0.889" layer="22" ratio="15" rot="MR90" align="bottom-center">I2C PU</text>
 <text x="6.35" y="39.37" size="1.016" layer="21" font="vector" ratio="15" rot="R90" align="center-left">!WAK</text>
 <text x="3.81" y="39.37" size="1.016" layer="21" font="vector" ratio="15" rot="R90" align="center-left">!INT</text>
 <text x="1.27" y="39.37" size="1.016" layer="21" font="vector" ratio="15" rot="R90" align="center-left">!RST</text>
@@ -336,10 +336,10 @@
 <text x="34.798" y="39.37" size="1.016" layer="22" font="vector" ratio="15" rot="MR90" align="center-left">GND</text>
 <text x="27.305" y="53.086" size="1.2065" layer="21" ratio="15" align="center">CCS811</text>
 <text x="35.687" y="46.863" size="1.016" layer="16" ratio="20" rot="MR270" align="bottom-center">X10</text>
-<text x="22.479" y="46.863" size="0.889" layer="22" ratio="15" rot="MR90" align="bottom-center">JP2</text>
+<text x="22.479" y="46.863" size="0.889" layer="22" ratio="15" rot="MR90" align="bottom-center">ADDR</text>
 <text x="35.687" y="46.863" size="1.016" layer="21" ratio="15" rot="R90" align="bottom-center">NTC</text>
 <text x="27.305" y="51.435" size="1.016" layer="21" ratio="15" align="center">Air Quality</text>
-<text x="18.669" y="46.863" size="0.889" layer="22" ratio="15" rot="MR90" align="bottom-center">JP1</text>
+<text x="18.669" y="46.863" size="0.889" layer="22" ratio="15" rot="MR90" align="bottom-center">I2C PU</text>
 <text x="24.638" y="39.37" size="1.016" layer="21" font="vector" ratio="15" rot="R90" align="center-left">!WAK</text>
 <text x="22.098" y="39.37" size="1.016" layer="21" font="vector" ratio="15" rot="R90" align="center-left">!INT</text>
 <text x="19.558" y="39.37" size="1.016" layer="21" font="vector" ratio="15" rot="R90" align="center-left">!RST</text>
@@ -360,10 +360,10 @@
 <text x="53.086" y="39.37" size="1.016" layer="22" font="vector" ratio="15" rot="MR90" align="center-left">GND</text>
 <text x="45.593" y="53.086" size="1.2065" layer="21" ratio="15" align="center">CCS811</text>
 <text x="53.975" y="46.863" size="1.016" layer="16" ratio="20" rot="MR270" align="bottom-center">X10</text>
-<text x="40.767" y="46.863" size="0.889" layer="22" ratio="15" rot="MR90" align="bottom-center">JP2</text>
+<text x="40.767" y="46.863" size="0.889" layer="22" ratio="15" rot="MR90" align="bottom-center">ADDR</text>
 <text x="53.975" y="46.863" size="1.016" layer="21" ratio="15" rot="R90" align="bottom-center">NTC</text>
 <text x="45.593" y="51.435" size="1.016" layer="21" ratio="15" align="center">Air Quality</text>
-<text x="36.957" y="46.863" size="0.889" layer="22" ratio="15" rot="MR90" align="bottom-center">JP1</text>
+<text x="36.957" y="46.863" size="0.889" layer="22" ratio="15" rot="MR90" align="bottom-center">I2C PU</text>
 <text x="42.926" y="39.37" size="1.016" layer="21" font="vector" ratio="15" rot="R90" align="center-left">!WAK</text>
 <text x="40.386" y="39.37" size="1.016" layer="21" font="vector" ratio="15" rot="R90" align="center-left">!INT</text>
 <text x="37.846" y="39.37" size="1.016" layer="21" font="vector" ratio="15" rot="R90" align="center-left">!RST</text>
@@ -381,6 +381,47 @@ We've spent an enormous amount of time creating and checking these footprints an
 &lt;br&gt;&lt;br&gt;
 You are welcome to use this library for commercial purposes. For attribution, we ask that when you begin to sell your device using our footprint, you email us with a link to the product being sold. We want bragging rights that we helped (in a very small part) to create your 8th world wonder. We would like the opportunity to feature your device on our homepage.</description>
 <packages>
+<package name="OSHW-LOGO-S">
+<description>&lt;h3&gt;Open-Source Hardware (OSHW) Logo - Small - Silkscreen&lt;/h3&gt;
+&lt;p&gt;Silkscreen logo for open-source hardware designs.&lt;/p&gt;
+&lt;p&gt;Devices using:
+&lt;ul&gt;&lt;li&gt;OSHW_LOGO&lt;/li&gt;&lt;/ul&gt;&lt;/p&gt;</description>
+<polygon width="0.15" layer="21">
+<vertex x="0.3947" y="-0.9528" curve="9.498218"/>
+<vertex x="0.5465" y="-0.8746"/>
+<vertex x="0.9235" y="-1.182"/>
+<vertex x="1.182" y="-0.9235"/>
+<vertex x="0.8746" y="-0.5465" curve="19.000773"/>
+<vertex x="1.0049" y="-0.232"/>
+<vertex x="1.4888" y="-0.1828"/>
+<vertex x="1.4888" y="0.1828"/>
+<vertex x="1.0049" y="0.232" curve="19.000773"/>
+<vertex x="0.8746" y="0.5465"/>
+<vertex x="1.182" y="0.9235"/>
+<vertex x="0.9235" y="1.182"/>
+<vertex x="0.5465" y="0.8746" curve="19.000773"/>
+<vertex x="0.232" y="1.0049"/>
+<vertex x="0.1828" y="1.4888"/>
+<vertex x="-0.1828" y="1.4888"/>
+<vertex x="-0.232" y="1.0049" curve="19.000773"/>
+<vertex x="-0.5465" y="0.8746"/>
+<vertex x="-0.9235" y="1.182"/>
+<vertex x="-1.182" y="0.9235"/>
+<vertex x="-0.8746" y="0.5465" curve="19.000773"/>
+<vertex x="-1.0049" y="0.232"/>
+<vertex x="-1.4888" y="0.1828"/>
+<vertex x="-1.4888" y="-0.1828"/>
+<vertex x="-1.0049" y="-0.232" curve="19.000773"/>
+<vertex x="-0.8746" y="-0.5465"/>
+<vertex x="-1.182" y="-0.9235"/>
+<vertex x="-0.9235" y="-1.182"/>
+<vertex x="-0.5465" y="-0.8746" curve="9.498218"/>
+<vertex x="-0.3947" y="-0.9528"/>
+<vertex x="-0.1794" y="-0.4331" curve="-67.514699"/>
+<vertex x="-0.4688" y="0" curve="-247.473915"/>
+<vertex x="0.1794" y="-0.4331"/>
+</polygon>
+</package>
 <package name="FIDUCIAL-1X2">
 <description>&lt;h3&gt;Fiducial - Circle, 1mm&lt;/h3&gt;
 &lt;p&gt;Point-of-reference for pick-and-place machines and other optical instruments.&lt;/p&gt;
@@ -936,34 +977,39 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <class number="0" name="default" width="0" drill="0">
 </class>
 </classes>
-<designrules name="default">
-<description language="en">&lt;b&gt;EAGLE Design Rules&lt;/b&gt;
+<designrules name="SparkFun-2-layer-TIGHT">
+<description language="en">&lt;b&gt;SparkFun 2 Layer Design Rule Checks - STANDARD/TIGHT/FAB-LIMIT&lt;/b&gt;
 &lt;p&gt;
-The default Design Rules have been set to cover
-a wide range of applications. Your particular design
-may have different requirements, so please make the
-necessary adjustments and save your customized
-design rules under a new name.
-</description>
+These rules have been curated by SparkFuns DFM commitee. After doing much research, communicating with our multiple fab houses, and getting quotes of various designs, we have compiled three DRU files. 
+&lt;p&gt;
+&lt;b&gt;STANDARD:&lt;/b&gt; This is more of a &quot;best case scenario&quot; set of limitations. If your design has the space, and/or you have the time to work within these parameters, please do. Larger trace width and clearance makes for easier visual inspection of the PCB while troubleshooting (useful in production and to the end user). It also allows for better ability to hack a trace (if you are crazy enough to scrape away the mask and solder to a trace). Another thing to keep in mind is that more metal is just more robust. 
+&lt;p&gt;
+&lt;b&gt;TIGHT:&lt;/b&gt; This is where cost comes into play. We have found that most fab houses begin to add extra charges when you go smaller than these specs. In some cases, going to less than 15 mil trace can increase the cost by 10%. (This is why we have set the min drill on this DRU to 15 mil) Same story for traces thinner than 7 mil. To avoid those extra charges, then stay within the rules of this DRU.
+&lt;p&gt;
+&lt;b&gt;FAB-LIMIT:&lt;/b&gt; These set of rules are at the very limit of most fab houses capabilities. You will pay more for these specs, and it should be used on designs that have a darned good reason to need 4 mil vias and 4 mil traces.
+&lt;p&gt;
+**NOTE Clearance, Distance, Sizes, and Restring are all set to different limits in each of these three DRU files. Please compare the files within the CAM job editor window of eagle to see all the numbers.
+&lt;p&gt;
+***NOTE, Please set your Net Classes to default (0mil for all settings), so that it won't effect the DRC when you run it with these settings.</description>
 <param name="layerSetup" value="(1*16)"/>
 <param name="mtCopper" value="0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm"/>
 <param name="mtIsolate" value="1.5mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm"/>
-<param name="mdWireWire" value="8mil"/>
-<param name="mdWirePad" value="8mil"/>
-<param name="mdWireVia" value="8mil"/>
-<param name="mdPadPad" value="8mil"/>
-<param name="mdPadVia" value="8mil"/>
-<param name="mdViaVia" value="8mil"/>
-<param name="mdSmdPad" value="8mil"/>
-<param name="mdSmdVia" value="8mil"/>
-<param name="mdSmdSmd" value="8mil"/>
+<param name="mdWireWire" value="7mil"/>
+<param name="mdWirePad" value="7mil"/>
+<param name="mdWireVia" value="7mil"/>
+<param name="mdPadPad" value="7mil"/>
+<param name="mdPadVia" value="7mil"/>
+<param name="mdViaVia" value="7mil"/>
+<param name="mdSmdPad" value="7mil"/>
+<param name="mdSmdVia" value="7mil"/>
+<param name="mdSmdSmd" value="7mil"/>
 <param name="mdViaViaSameLayer" value="8mil"/>
 <param name="mnLayersViaInSmd" value="2"/>
-<param name="mdCopperDimension" value="40mil"/>
-<param name="mdDrill" value="8mil"/>
+<param name="mdCopperDimension" value="7mil"/>
+<param name="mdDrill" value="7mil"/>
 <param name="mdSmdStop" value="0mil"/>
-<param name="msWidth" value="10mil"/>
-<param name="msDrill" value="0.6mm"/>
+<param name="msWidth" value="7mil"/>
+<param name="msDrill" value="15mil"/>
 <param name="msMicroVia" value="9.99mm"/>
 <param name="msBlindViaRatio" value="0.5"/>
 <param name="rvPadTop" value="0.25"/>
@@ -973,15 +1019,15 @@ design rules under a new name.
 <param name="rvViaInner" value="0.25"/>
 <param name="rvMicroViaOuter" value="0.25"/>
 <param name="rvMicroViaInner" value="0.25"/>
-<param name="rlMinPadTop" value="10mil"/>
+<param name="rlMinPadTop" value="7mil"/>
 <param name="rlMaxPadTop" value="20mil"/>
-<param name="rlMinPadInner" value="10mil"/>
+<param name="rlMinPadInner" value="7mil"/>
 <param name="rlMaxPadInner" value="20mil"/>
-<param name="rlMinPadBottom" value="10mil"/>
+<param name="rlMinPadBottom" value="7mil"/>
 <param name="rlMaxPadBottom" value="20mil"/>
-<param name="rlMinViaOuter" value="8mil"/>
+<param name="rlMinViaOuter" value="7mil"/>
 <param name="rlMaxViaOuter" value="20mil"/>
-<param name="rlMinViaInner" value="8mil"/>
+<param name="rlMinViaInner" value="7mil"/>
 <param name="rlMaxViaInner" value="20mil"/>
 <param name="rlMinMicroViaOuter" value="4mil"/>
 <param name="rlMaxMicroViaOuter" value="20mil"/>
@@ -998,7 +1044,7 @@ design rules under a new name.
 <param name="mlMaxStopFrame" value="4mil"/>
 <param name="mlMinCreamFrame" value="0mil"/>
 <param name="mlMaxCreamFrame" value="0mil"/>
-<param name="mlViaStopLimit" value="0mil"/>
+<param name="mlViaStopLimit" value="25mil"/>
 <param name="srRoundness" value="0"/>
 <param name="srMinRoundness" value="0mil"/>
 <param name="srMaxRoundness" value="0mil"/>
@@ -1007,11 +1053,11 @@ design rules under a new name.
 <param name="dpMaxLengthDifference" value="10mm"/>
 <param name="dpGapFactor" value="2.5"/>
 <param name="checkGrid" value="0"/>
-<param name="checkAngle" value="0"/>
+<param name="checkAngle" value="1"/>
 <param name="checkFont" value="1"/>
 <param name="checkRestrict" value="1"/>
 <param name="useDiameter" value="13"/>
-<param name="maxErrors" value="999999"/>
+<param name="maxErrors" value="50"/>
 </designrules>
 <autorouter>
 <pass name="Default">
@@ -1134,6 +1180,7 @@ design rules under a new name.
 <attribute name="PROD_ID" value="N/A" x="15.24" y="10.16" size="0.8128" layer="27" ratio="15" rot="R270" display="off"/>
 <attribute name="SF_ID" value="SEN-00250" x="15.24" y="10.16" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
+<element name="LOGO4" library="SparkFun-Aesthetics" package="OSHW-LOGO-S" value="OSHW-LOGOS" x="8.89" y="7.62" rot="MR0"/>
 <element name="FD1" library="SparkFun-Aesthetics" package="FIDUCIAL-1X2" value="FIDUCIAL1X2" x="0.762" y="17.018"/>
 <element name="FD2" library="SparkFun-Aesthetics" package="FIDUCIAL-1X2" value="FIDUCIAL1X2" x="15.24" y="2.54"/>
 <element name="R2" library="SparkFun-Resistors" package="0603" value="4.7k" x="6.985" y="6.35" rot="R180">
@@ -1169,6 +1216,7 @@ design rules under a new name.
 <attribute name="PROD_ID" value="N/A" x="33.528" y="10.16" size="0.8128" layer="27" ratio="15" rot="R270" display="off"/>
 <attribute name="SF_ID" value="SEN-00250" x="33.528" y="10.16" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
+<element name="LOGO1" library="SparkFun-Aesthetics" package="OSHW-LOGO-S" value="OSHW-LOGOS" x="27.178" y="7.62" rot="MR0"/>
 <element name="FD3" library="SparkFun-Aesthetics" package="FIDUCIAL-1X2" value="FIDUCIAL1X2" x="19.05" y="17.018"/>
 <element name="FD4" library="SparkFun-Aesthetics" package="FIDUCIAL-1X2" value="FIDUCIAL1X2" x="33.528" y="2.54"/>
 <element name="R9" library="SparkFun-Resistors" package="0603" value="4.7k" x="25.273" y="6.35" rot="R180">
@@ -1204,6 +1252,7 @@ design rules under a new name.
 <attribute name="PROD_ID" value="N/A" x="51.816" y="10.16" size="0.8128" layer="27" ratio="15" rot="R270" display="off"/>
 <attribute name="SF_ID" value="SEN-00250" x="51.816" y="10.16" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
+<element name="LOGO2" library="SparkFun-Aesthetics" package="OSHW-LOGO-S" value="OSHW-LOGOS" x="45.466" y="7.62" rot="MR0"/>
 <element name="FD5" library="SparkFun-Aesthetics" package="FIDUCIAL-1X2" value="FIDUCIAL1X2" x="37.338" y="17.018"/>
 <element name="FD6" library="SparkFun-Aesthetics" package="FIDUCIAL-1X2" value="FIDUCIAL1X2" x="51.816" y="2.54"/>
 <element name="R20" library="SparkFun-Resistors" package="0603" value="4.7k" x="43.561" y="6.35" rot="R180">
@@ -1239,6 +1288,7 @@ design rules under a new name.
 <attribute name="PROD_ID" value="N/A" x="15.24" y="28.448" size="0.8128" layer="27" ratio="15" rot="R270" display="off"/>
 <attribute name="SF_ID" value="SEN-00250" x="15.24" y="28.448" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
+<element name="LOGO3" library="SparkFun-Aesthetics" package="OSHW-LOGO-S" value="OSHW-LOGOS" x="8.89" y="25.908" rot="MR0"/>
 <element name="FD7" library="SparkFun-Aesthetics" package="FIDUCIAL-1X2" value="FIDUCIAL1X2" x="0.762" y="35.306"/>
 <element name="FD8" library="SparkFun-Aesthetics" package="FIDUCIAL-1X2" value="FIDUCIAL1X2" x="15.24" y="20.828"/>
 <element name="R27" library="SparkFun-Resistors" package="0603" value="4.7k" x="6.985" y="24.638" rot="R180">
@@ -1274,6 +1324,7 @@ design rules under a new name.
 <attribute name="PROD_ID" value="N/A" x="33.528" y="28.448" size="0.8128" layer="27" ratio="15" rot="R270" display="off"/>
 <attribute name="SF_ID" value="SEN-00250" x="33.528" y="28.448" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
+<element name="LOGO5" library="SparkFun-Aesthetics" package="OSHW-LOGO-S" value="OSHW-LOGOS" x="27.178" y="25.908" rot="MR0"/>
 <element name="FD9" library="SparkFun-Aesthetics" package="FIDUCIAL-1X2" value="FIDUCIAL1X2" x="19.05" y="35.306"/>
 <element name="FD10" library="SparkFun-Aesthetics" package="FIDUCIAL-1X2" value="FIDUCIAL1X2" x="33.528" y="20.828"/>
 <element name="R34" library="SparkFun-Resistors" package="0603" value="4.7k" x="25.273" y="24.638" rot="R180">
@@ -1309,6 +1360,7 @@ design rules under a new name.
 <attribute name="PROD_ID" value="N/A" x="51.816" y="28.448" size="0.8128" layer="27" ratio="15" rot="R270" display="off"/>
 <attribute name="SF_ID" value="SEN-00250" x="51.816" y="28.448" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
+<element name="LOGO6" library="SparkFun-Aesthetics" package="OSHW-LOGO-S" value="OSHW-LOGOS" x="45.466" y="25.908" rot="MR0"/>
 <element name="FD11" library="SparkFun-Aesthetics" package="FIDUCIAL-1X2" value="FIDUCIAL1X2" x="37.338" y="35.306"/>
 <element name="FD12" library="SparkFun-Aesthetics" package="FIDUCIAL-1X2" value="FIDUCIAL1X2" x="51.816" y="20.828"/>
 <element name="R41" library="SparkFun-Resistors" package="0603" value="4.7k" x="43.561" y="24.638" rot="R180">
@@ -1344,6 +1396,7 @@ design rules under a new name.
 <attribute name="PROD_ID" value="N/A" x="15.24" y="46.736" size="0.8128" layer="27" ratio="15" rot="R270" display="off"/>
 <attribute name="SF_ID" value="SEN-00250" x="15.24" y="46.736" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
+<element name="LOGO7" library="SparkFun-Aesthetics" package="OSHW-LOGO-S" value="OSHW-LOGOS" x="8.89" y="44.196" rot="MR0"/>
 <element name="FD13" library="SparkFun-Aesthetics" package="FIDUCIAL-1X2" value="FIDUCIAL1X2" x="0.762" y="53.594"/>
 <element name="FD14" library="SparkFun-Aesthetics" package="FIDUCIAL-1X2" value="FIDUCIAL1X2" x="15.24" y="39.116"/>
 <element name="R48" library="SparkFun-Resistors" package="0603" value="4.7k" x="6.985" y="42.926" rot="R180">
@@ -1379,6 +1432,7 @@ design rules under a new name.
 <attribute name="PROD_ID" value="N/A" x="33.528" y="46.736" size="0.8128" layer="27" ratio="15" rot="R270" display="off"/>
 <attribute name="SF_ID" value="SEN-00250" x="33.528" y="46.736" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
+<element name="LOGO8" library="SparkFun-Aesthetics" package="OSHW-LOGO-S" value="OSHW-LOGOS" x="27.178" y="44.196" rot="MR0"/>
 <element name="FD15" library="SparkFun-Aesthetics" package="FIDUCIAL-1X2" value="FIDUCIAL1X2" x="19.05" y="53.594"/>
 <element name="FD16" library="SparkFun-Aesthetics" package="FIDUCIAL-1X2" value="FIDUCIAL1X2" x="33.528" y="39.116"/>
 <element name="R55" library="SparkFun-Resistors" package="0603" value="4.7k" x="25.273" y="42.926" rot="R180">
@@ -1414,6 +1468,7 @@ design rules under a new name.
 <attribute name="PROD_ID" value="N/A" x="51.816" y="46.736" size="0.8128" layer="27" ratio="15" rot="R270" display="off"/>
 <attribute name="SF_ID" value="SEN-00250" x="51.816" y="46.736" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
+<element name="LOGO9" library="SparkFun-Aesthetics" package="OSHW-LOGO-S" value="OSHW-LOGOS" x="45.466" y="44.196" rot="MR0"/>
 <element name="FD17" library="SparkFun-Aesthetics" package="FIDUCIAL-1X2" value="FIDUCIAL1X2" x="37.338" y="53.594"/>
 <element name="FD18" library="SparkFun-Aesthetics" package="FIDUCIAL-1X2" value="FIDUCIAL1X2" x="51.816" y="39.116"/>
 <element name="R62" library="SparkFun-Resistors" package="0603" value="4.7k" x="43.561" y="42.926" rot="R180">
@@ -1449,7 +1504,6 @@ design rules under a new name.
 <via x="12.7" y="13.335" extent="1-16" drill="0.381"/>
 <contactref element="R1" pad="1"/>
 <via x="12.7" y="5.08" extent="1-16" drill="0.381"/>
-<wire x1="8.89" y1="10.16" x2="6.35" y2="10.5664" width="0" layer="19" extent="1-16"/>
 </signal>
 <signal name="SCL">
 <contactref element="J8" pad="4"/>
@@ -1652,7 +1706,6 @@ design rules under a new name.
 <via x="30.988" y="13.335" extent="1-16" drill="0.381"/>
 <contactref element="R11" pad="1"/>
 <via x="30.988" y="5.08" extent="1-16" drill="0.381"/>
-<wire x1="27.178" y1="10.16" x2="24.638" y2="10.5664" width="0" layer="19" extent="1-16"/>
 </signal>
 <signal name="SCL1">
 <contactref element="J1" pad="4"/>
@@ -1855,7 +1908,6 @@ design rules under a new name.
 <via x="49.276" y="13.335" extent="1-16" drill="0.381"/>
 <contactref element="R21" pad="1"/>
 <via x="49.276" y="5.08" extent="1-16" drill="0.381"/>
-<wire x1="45.466" y1="10.16" x2="42.926" y2="10.5664" width="0" layer="19" extent="1-16"/>
 </signal>
 <signal name="SCL2">
 <contactref element="J4" pad="4"/>
@@ -2058,7 +2110,6 @@ design rules under a new name.
 <via x="12.7" y="31.623" extent="1-16" drill="0.381"/>
 <contactref element="R28" pad="1"/>
 <via x="12.7" y="23.368" extent="1-16" drill="0.381"/>
-<wire x1="8.89" y1="28.448" x2="6.35" y2="28.8544" width="0" layer="19" extent="1-16"/>
 </signal>
 <signal name="SCL3">
 <contactref element="J6" pad="4"/>
@@ -2261,7 +2312,6 @@ design rules under a new name.
 <via x="30.988" y="31.623" extent="1-16" drill="0.381"/>
 <contactref element="R35" pad="1"/>
 <via x="30.988" y="23.368" extent="1-16" drill="0.381"/>
-<wire x1="27.178" y1="28.448" x2="24.638" y2="28.8544" width="0" layer="19" extent="1-16"/>
 </signal>
 <signal name="SCL4">
 <contactref element="J9" pad="4"/>
@@ -2464,7 +2514,6 @@ design rules under a new name.
 <via x="49.276" y="31.623" extent="1-16" drill="0.381"/>
 <contactref element="R42" pad="1"/>
 <via x="49.276" y="23.368" extent="1-16" drill="0.381"/>
-<wire x1="45.466" y1="28.448" x2="42.926" y2="28.8544" width="0" layer="19" extent="1-16"/>
 </signal>
 <signal name="SCL5">
 <contactref element="J11" pad="4"/>
@@ -2667,7 +2716,6 @@ design rules under a new name.
 <via x="12.7" y="49.911" extent="1-16" drill="0.381"/>
 <contactref element="R49" pad="1"/>
 <via x="12.7" y="41.656" extent="1-16" drill="0.381"/>
-<wire x1="8.89" y1="46.736" x2="6.35" y2="47.1424" width="0" layer="19" extent="1-16"/>
 </signal>
 <signal name="SCL6">
 <contactref element="J13" pad="4"/>
@@ -2870,7 +2918,6 @@ design rules under a new name.
 <via x="30.988" y="49.911" extent="1-16" drill="0.381"/>
 <contactref element="R56" pad="1"/>
 <via x="30.988" y="41.656" extent="1-16" drill="0.381"/>
-<wire x1="27.178" y1="46.736" x2="24.638" y2="47.1424" width="0" layer="19" extent="1-16"/>
 </signal>
 <signal name="SCL7">
 <contactref element="J15" pad="4"/>
@@ -3073,7 +3120,6 @@ design rules under a new name.
 <via x="49.276" y="49.911" extent="1-16" drill="0.381"/>
 <contactref element="R63" pad="1"/>
 <via x="49.276" y="41.656" extent="1-16" drill="0.381"/>
-<wire x1="45.466" y1="46.736" x2="42.926" y2="47.1424" width="0" layer="19" extent="1-16"/>
 </signal>
 <signal name="SCL8">
 <contactref element="J17" pad="4"/>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.7.0">
+<eagle version="7.6.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="yes"/>
@@ -29,10 +29,10 @@
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="21" name="tPlace" color="16" fill="1" visible="yes" active="yes"/>
-<layer number="22" name="bPlace" color="14" fill="1" visible="no" active="yes"/>
+<layer number="22" name="bPlace" color="14" fill="1" visible="yes" active="yes"/>
 <layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="yes"/>
-<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="no" active="yes"/>
 <layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
@@ -52,13 +52,13 @@
 <layer number="42" name="bRestrict" color="1" fill="10" visible="no" active="yes"/>
 <layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="yes"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
-<layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
+<layer number="45" name="Holes" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
 <layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
 <layer number="48" name="Document" color="7" fill="1" visible="no" active="yes"/>
-<layer number="49" name="Reference" color="7" fill="1" visible="no" active="yes"/>
+<layer number="49" name="Reference" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
-<layer number="51" name="tDocu" color="6" fill="1" visible="no" active="yes"/>
+<layer number="51" name="tDocu" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="52" name="bDocu" color="7" fill="1" visible="no" active="yes"/>
 <layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
 <layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
@@ -168,7 +168,7 @@
 <text x="16.51" y="2.794" size="1.016" layer="22" font="vector" ratio="15" rot="MR90" align="center-left">GND</text>
 <text x="9.017" y="16.51" size="1.2065" layer="21" ratio="15" align="center">CCS811</text>
 <text x="17.399" y="10.287" size="1.016" layer="16" ratio="20" rot="MR270" align="bottom-center">X10</text>
-<text x="4.191" y="10.287" size="0.889" layer="22" ratio="15" rot="MR90" align="bottom-center">JP2</text>
+<text x="4.191" y="10.287" size="0.889" layer="22" ratio="15" rot="MR90" align="bottom-center">ADDR</text>
 <text x="16.51" y="-21.59" size="1.778" layer="51">Jim Lindblom</text>
 <dimension x1="0" y1="0" x2="0" y2="50.8" x3="-15.24" y3="25.4" textsize="0.889" textratio="15" layer="47" dtype="vertical" unit="inch" precision="3"/>
 <dimension x1="2.54" y1="48.26" x2="2.54" y2="0" x3="-12.7" y3="24.13" textsize="0.889" textratio="15" layer="47" dtype="vertical" unit="inch" precision="3"/>
@@ -208,7 +208,7 @@
 <text x="-12.7" y="-10.16" size="0.889" layer="47" ratio="15">Units in inches</text>
 <text x="17.399" y="10.287" size="1.016" layer="21" ratio="15" rot="R90" align="bottom-center">NTC</text>
 <text x="9.017" y="14.859" size="1.016" layer="21" ratio="15" align="center">Air Quality</text>
-<text x="0.381" y="10.287" size="0.889" layer="22" ratio="15" rot="MR90" align="bottom-center">JP1</text>
+<text x="0.381" y="10.287" size="0.889" layer="22" ratio="15" rot="MR90" align="bottom-center">I2C PU</text>
 <text x="6.35" y="2.794" size="1.016" layer="21" font="vector" ratio="15" rot="R90" align="center-left">!WAK</text>
 <text x="3.81" y="2.794" size="1.016" layer="21" font="vector" ratio="15" rot="R90" align="center-left">!INT</text>
 <text x="1.27" y="2.794" size="1.016" layer="21" font="vector" ratio="15" rot="R90" align="center-left">!RST</text>
@@ -1036,7 +1036,7 @@ These rules have been curated by SparkFuns DFM commitee. After doing much resear
 <attribute name="PROD_ID" value="N/A" x="15.24" y="10.16" size="0.8128" layer="27" ratio="15" rot="R270" display="off"/>
 <attribute name="SF_ID" value="SEN-00250" x="15.24" y="10.16" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
-<element name="LOGO4" library="SparkFun-Aesthetics" package="OSHW-LOGO-S" value="OSHW-LOGOS" x="22.86" y="5.08"/>
+<element name="LOGO4" library="SparkFun-Aesthetics" package="OSHW-LOGO-S" value="OSHW-LOGOS" x="8.89" y="7.62" rot="MR0"/>
 <element name="FD1" library="SparkFun-Aesthetics" package="FIDUCIAL-1X2" value="FIDUCIAL1X2" x="0.762" y="17.018"/>
 <element name="FD2" library="SparkFun-Aesthetics" package="FIDUCIAL-1X2" value="FIDUCIAL1X2" x="15.24" y="2.54"/>
 <element name="R2" library="SparkFun-Resistors" package="0603" value="4.7k" x="6.985" y="6.35" rot="R180">

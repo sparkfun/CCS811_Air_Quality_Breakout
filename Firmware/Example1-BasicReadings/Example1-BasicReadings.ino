@@ -60,7 +60,7 @@ void setup()
   Serial.print(hwID);
   Serial.print("]");
 
-  while (1);
+  //while (1);
 
   //Check for errors
   if (checkForError() == true)
