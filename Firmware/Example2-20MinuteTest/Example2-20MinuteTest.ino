@@ -5,9 +5,11 @@
   Date: February 7th, 2017
   License: This code is public domain but you buy me a beer if you use this and we meet someday (Beerware license).
 
+  Calculates the current run time and indicates when 20 minutes has passed
+
   Read the TVOC and CO2 values from the SparkFun CSS811 breakout board
 
-  A new sensor requires at 48-burn in. Once burned in a sensor requires 
+  A new sensor requires at 48-burn in. Once burned in a sensor requires
   20 minutes of run in before readings are considered good.
 
   Hardware Connections (Breakoutboard to Arduino):
@@ -58,14 +60,6 @@ void setup()
   Wire.begin();
 
   configureCCS811(); //Turn on sensor
-
-  unsigned int result = getBaseline();
-
-  Serial.print("baseline for this sensor: 0x");
-  if(result < 0x100) Serial.print("0");
-  if(result < 0x10) Serial.print("0");
-  Serial.println(result, HEX);
-
 }
 
 void loop()
@@ -78,9 +72,10 @@ void loop()
     Serial.print(CO2);
     Serial.print("] tVOC[");
     Serial.print(tVOC);
-    Serial.print("] millis[");
-    Serial.print(millis());
-    Serial.print("]");
+    Serial.print("] ");
+
+    printRunTime();
+
     Serial.println();
   }
   else if (checkForError())
@@ -89,6 +84,26 @@ void loop()
   }
 
   delay(1000); //Wait for next reading
+}
+
+//Prints the amount of time the board has been running
+//Does the hour, minute, and second calcs
+void printRunTime()
+{
+  char buffer[50];
+
+  unsigned long runTime = millis();
+
+  int hours = runTime / (60 * 60 * 1000L);
+  runTime %= (60 * 60 * 1000L);
+  int minutes = runTime / (60 * 1000L);
+  runTime %= (60 * 1000L);
+  int seconds = runTime / 1000L;
+  
+  sprintf(buffer, "RunTime[%02d:%02d:%02d]", hours, minutes, seconds);
+  Serial.print(buffer);
+
+  if(minutes < 20) Serial.print(" Not yet valid");
 }
 
 //Updates the total voltatile organic compounds (TVOC) in parts per billion (PPB)
@@ -202,6 +217,9 @@ unsigned int getBaseline()
   byte baselineLSB = Wire.read();
 
   unsigned int baseline = ((unsigned int)baselineMSB << 8) | baselineLSB;
+
+  Serial.print("Baseline: ");
+  Serial.println(baseline);
 
   return (baseline);
 }

@@ -5,10 +5,8 @@
   Date: February 7th, 2017
   License: This code is public domain but you buy me a beer if you use this and we meet someday (Beerware license).
 
-  Read the TVOC and CO2 values from the SparkFun CSS811 breakout board
-
-  A new sensor requires at 48-burn in. Once burned in a sensor requires 
-  20 minutes of run in before readings are considered good.
+  Sends the humidity and temperature from a separate sensor to the CCS811 so
+  that the CCS811 can adjust its algorithm.
 
   Hardware Connections (Breakoutboard to Arduino):
   3.3V = 3.3V
@@ -23,8 +21,6 @@
 #include <Wire.h>
 
 #define CCS811_ADDR 0x5B //7-bit unshifted default I2C Address
-
-#define WAKE 13 //!Wake on breakout connected to pin 5 on Arduino
 
 //Register addresses
 #define CSS811_STATUS 0x00
@@ -58,6 +54,8 @@ void setup()
   Wire.begin();
 
   configureCCS811(); //Turn on sensor
+
+  stopped here
 
   unsigned int result = getBaseline();
 
@@ -202,6 +200,9 @@ unsigned int getBaseline()
   byte baselineLSB = Wire.read();
 
   unsigned int baseline = ((unsigned int)baselineMSB << 8) | baselineLSB;
+
+  Serial.print("Baseline: ");
+  Serial.println(baseline);
 
   return (baseline);
 }
