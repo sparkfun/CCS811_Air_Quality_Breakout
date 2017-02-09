@@ -21,7 +21,7 @@
 
 #define CCS811_ADDR 0x5B //7-bit unshifted default I2C Address
 
-#define WAKE 5 //!Wake on breakout connected to pin 5 on Arduino
+#define WAKE 13 //!Wake on breakout connected to pin 5 on Arduino
 
 //Register addresses
 #define CSS811_STATUS 0x00
@@ -55,12 +55,11 @@ void setup()
   Wire.begin();
 
   //Verify the hardware ID is what we expect
-  byte hwID = readRegister(0x20); //Hardware ID should be 0x20
-  Serial.print("HW ID[");
-  Serial.print(hwID);
-  Serial.print("]");
-
-  //while (1);
+  byte hwID = readRegister(0x20); //Hardware ID should be 0x81
+  if (hwID != 0x81)
+  {
+    Serial.println("CCS811 not found. Please check wiring.");
+  }
 
   //Check for errors
   if (checkForError() == true)
@@ -79,7 +78,6 @@ void setup()
 
   //Set Drive Mode
   setDriveMode(1); //Read every second
-
 }
 
 void loop()
@@ -99,11 +97,11 @@ void loop()
   {
     printError();
   }
-  else
-    Serial.print(".");
+  //else
+  //  Serial.print(".");
 
 
-  delay(100); //Wait for next reading
+  delay(1000); //Wait for next reading
 }
 
 //Updates the total voltatile organic compounds (TVOC) in parts per billion (PPB)
@@ -136,6 +134,8 @@ boolean checkForError()
 }
 
 //Displays the type of error
+//Calling this causes reading the contents of the ERROR register
+//This should clear the ERROR_ID register
 void printError()
 {
   byte error = readRegister(CSS811_ERROR_ID);
@@ -218,15 +218,9 @@ void setDriveMode(byte mode)
 
   byte setting = readRegister(CSS811_MEAS_MODE); //Read what's currently there
 
-  Serial.print("setting: 0x");
-  Serial.println(setting, HEX);
-
   setting &= ~(0b00000111 << 4); //Clear DRIVE_MODE bits
   setting |= (mode << 4); //Mask in mode
   writeRegister(CSS811_MEAS_MODE, setting);
-
-  Serial.print("setting after: 0x");
-  Serial.println(setting, HEX);
 }
 
 //Given a temp and humidity, write this data to the CSS811 for better compensation
@@ -235,7 +229,7 @@ void setEnvironmentalData(float relativeHumidity, float temperature)
 {
   int rH = relativeHumidity * 1000; //42.348 becomes 42348
   int temp = temperature * 1000; //23.2 becomes 23200
-  
+
   byte envData[4];
 
   //Split value into 7-bit integer and 9-bit fractional
@@ -251,7 +245,7 @@ void setEnvironmentalData(float relativeHumidity, float temperature)
   envData[2] = ((temp % 1000) / 100) > 7 ? (temp / 1000 + 1) << 1 : (temp / 1000) << 1;
   envData[3] = 0;
   if (((temp % 1000) / 100) > 2 && (((temp % 1000) / 100) < 8))
-  { 
+  {
     envData[2] |= 1;  //Set 9th bit of fractional to indicate 0.5C
   }
 
@@ -283,4 +277,3 @@ void writeRegister(byte addr, byte val)
   Wire.write(val);
   Wire.endTransmission();
 }
-
