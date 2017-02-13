@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.6.0">
+<eagle version="7.7.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="yes"/>
@@ -169,43 +169,7 @@
 <text x="9.017" y="16.51" size="1.2065" layer="21" ratio="15" align="center">CCS811</text>
 <text x="17.399" y="10.287" size="1.016" layer="16" ratio="20" rot="MR270" align="bottom-center">X10</text>
 <text x="4.191" y="10.287" size="0.889" layer="22" ratio="15" rot="MR90" align="bottom-center">ADDR</text>
-<text x="16.51" y="-21.59" size="1.778" layer="51">Jim Lindblom</text>
-<dimension x1="0" y1="0" x2="0" y2="50.8" x3="-15.24" y3="25.4" textsize="0.889" textratio="15" layer="47" dtype="vertical" unit="inch" precision="3"/>
-<dimension x1="2.54" y1="48.26" x2="2.54" y2="0" x3="-12.7" y3="24.13" textsize="0.889" textratio="15" layer="47" dtype="vertical" unit="inch" precision="3"/>
-<dimension x1="2.54" y1="2.54" x2="-2.54" y2="0" x3="-2.54" y3="1.27" textsize="0.889" textratio="15" layer="47" dtype="vertical" unit="inch" precision="3"/>
-<dimension x1="58.42" y1="0" x2="0" y2="0" x3="29.21" y3="-12.7" textsize="0.889" textratio="15" layer="47" dtype="horizontal" unit="inch" precision="3"/>
-<dimension x1="55.88" y1="2.54" x2="0" y2="2.54" x3="27.94" y3="-10.16" textsize="0.889" textratio="15" layer="47" dtype="horizontal" unit="inch" precision="3"/>
-<dimension x1="2.54" y1="2.54" x2="0" y2="2.54" x3="1.27" y3="-2.54" textsize="0.889" textratio="15" layer="47" dtype="horizontal" unit="inch" precision="3"/>
-<polygon width="0.2032" layer="46">
-<vertex x="45.72" y="26.67" curve="90"/>
-<vertex x="46.99" y="27.94"/>
-<vertex x="46.99" y="30.48" curve="-90"/>
-<vertex x="48.26" y="31.75"/>
-<vertex x="54.61" y="31.75" curve="90"/>
-<vertex x="55.88" y="33.02" curve="90"/>
-<vertex x="54.61" y="34.29"/>
-<vertex x="45.72" y="34.29" curve="90"/>
-<vertex x="44.45" y="33.02"/>
-<vertex x="44.45" y="27.94" curve="90"/>
-</polygon>
-<polygon width="0.2032" layer="46">
-<vertex x="45.72" y="24.13" curve="-90"/>
-<vertex x="46.99" y="22.86"/>
-<vertex x="46.99" y="20.32" curve="90"/>
-<vertex x="48.26" y="19.05"/>
-<vertex x="54.61" y="19.05" curve="-90"/>
-<vertex x="55.88" y="17.78" curve="-90"/>
-<vertex x="54.61" y="16.51"/>
-<vertex x="45.72" y="16.51" curve="-90"/>
-<vertex x="44.45" y="17.78"/>
-<vertex x="44.45" y="22.86" curve="-90"/>
-</polygon>
-<dimension x1="5.08" y1="12.7" x2="5.08" y2="0" x3="-5.08" y3="6.35" textsize="0.889" textratio="15" layer="47" dtype="vertical" unit="inch" precision="3"/>
-<dimension x1="1.27" y1="22.86" x2="1.27" y2="0" x3="-7.62" y3="11.43" textsize="0.889" textratio="15" layer="47" dtype="vertical" unit="inch" precision="3"/>
-<dimension x1="5.08" y1="12.7" x2="0" y2="11.43" x3="2.54" y3="-7.62" textsize="0.889" textratio="15" layer="47" dtype="horizontal" unit="inch" precision="3"/>
-<dimension x1="3.556" y1="28.9" x2="0" y2="27.94" x3="1.778" y3="-5.08" textsize="0.889" textratio="15" layer="47" dtype="horizontal" unit="inch" precision="3"/>
-<dimension x1="3.556" y1="28.9" x2="5.08" y2="0" x3="-10.16" y3="14.45" textsize="0.889" textratio="15" layer="47" dtype="vertical" unit="inch" precision="3"/>
-<text x="-12.7" y="-10.16" size="0.889" layer="47" ratio="15">Units in inches</text>
+<text x="16.51" y="-21.59" size="1.778" layer="51">Nathan Seidle</text>
 <text x="17.399" y="10.287" size="1.016" layer="21" ratio="15" rot="R90" align="bottom-center">NTC</text>
 <text x="9.017" y="14.859" size="1.016" layer="21" ratio="15" align="center">Air Quality</text>
 <text x="0.381" y="10.287" size="0.889" layer="22" ratio="15" rot="MR90" align="bottom-center">I2C PU</text>

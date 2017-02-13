@@ -103,7 +103,7 @@ void printRunTime()
   sprintf(buffer, "RunTime[%02d:%02d:%02d]", hours, minutes, seconds);
   Serial.print(buffer);
 
-  if(minutes < 20) Serial.print(" Not yet valid");
+  if(hours == 0 && minutes < 20) Serial.print(" Not yet valid");
 }
 
 //Updates the total voltatile organic compounds (TVOC) in parts per billion (PPB)
