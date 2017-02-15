@@ -17,7 +17,6 @@
   GND = GND
   SDA = A4
   SCL = A5
-  WAKE = D5 - Optional, can be left unconnected
 
   Serial.print it out at 9600 baud to serial monitor.
 */
@@ -53,9 +52,6 @@ void setup()
 {
   Serial.begin(9600);
   Serial.println("CCS811 Read Example");
-
-  pinMode(WAKE, OUTPUT);
-  digitalWrite(WAKE, LOW);
 
   Wire.begin();
 

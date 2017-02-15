@@ -56,7 +56,7 @@
 <layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
 <layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
 <layer number="48" name="Document" color="7" fill="1" visible="no" active="yes"/>
-<layer number="49" name="Reference" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="49" name="Reference" color="7" fill="1" visible="no" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
 <layer number="51" name="tDocu" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="52" name="bDocu" color="7" fill="1" visible="no" active="yes"/>
@@ -1008,7 +1008,7 @@ These rules have been curated by SparkFuns DFM commitee. After doing much resear
 </element>
 <element name="U$1" library="SparkX" package="SPARKX-SMALL" value="SPARKX-LOGO3" x="8.89" y="15.24" rot="MR0"/>
 <element name="J2" library="SparkFun-Connectors" package="1X03_NO_SILK" value="" x="6.35" y="1.27" rot="R180"/>
-<element name="U2" library="SparkX" package="LGA10" value="CCS811PRODUCTION" x="8.89" y="10.16" rot="R90"/>
+<element name="U2" library="SparkX" package="LGA10" value="CCS811" x="8.89" y="10.16" rot="R90"/>
 <element name="R1" library="SparkFun-Resistors" package="0603" value="100k" x="10.795" y="6.35" rot="R180">
 <attribute name="PROD_ID" value="RES-07828" x="10.795" y="6.35" size="1.778" layer="27" font="vector" ratio="15" rot="R180" display="off"/>
 </element>

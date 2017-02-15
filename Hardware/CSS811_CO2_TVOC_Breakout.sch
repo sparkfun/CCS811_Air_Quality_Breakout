@@ -8282,7 +8282,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="R2" library="SparkFun-Resistors" deviceset="4.7KOHM" device="-0603-1/10W-1%" value="4.7k"/>
 <part name="U$1" library="SparkX" deviceset="SPARKX-LOGO" device="3"/>
 <part name="J2" library="SparkFun-Connectors" deviceset="CONN_03" device="1X03_NO_SILK"/>
-<part name="U2" library="SparkX" deviceset="CCS811" device="PRODUCTION"/>
+<part name="U2" library="SparkX" deviceset="CCS811" device="PRODUCTION" value="CCS811"/>
 <part name="R1" library="SparkFun-Resistors" deviceset="100KOHM" device="-0603-1/10W-1%" value="100k"/>
 <part name="GND1" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 </parts>

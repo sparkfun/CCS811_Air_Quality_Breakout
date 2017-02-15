@@ -15,7 +15,6 @@
   GND = GND
   SDA = A4
   SCL = A5
-  WAKE = D5 - Optional, can be left unconnected
 
   Serial.print it out at 9600 baud to serial monitor.
 */
@@ -23,8 +22,6 @@
 #include <Wire.h>
 
 #define CCS811_ADDR 0x5B //7-bit unshifted default I2C Address
-
-#define WAKE 13 //!Wake on breakout connected to pin 5 on Arduino
 
 //Register addresses
 #define CSS811_STATUS 0x00
@@ -52,9 +49,6 @@ void setup()
   Serial.begin(9600);
   Serial.println("CCS811 Read Example");
 
-  pinMode(WAKE, OUTPUT);
-  digitalWrite(WAKE, LOW);
-
   Wire.begin();
 
   configureCCS811(); //Turn on sensor
@@ -65,7 +59,6 @@ void setup()
   if(result < 0x100) Serial.print("0");
   if(result < 0x10) Serial.print("0");
   Serial.println(result, HEX);
-
 }
 
 void loop()
