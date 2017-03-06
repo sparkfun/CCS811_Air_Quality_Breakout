@@ -9696,50 +9696,28 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </library>
 <library name="CCS811_Breakout_Temp">
 <packages>
-<package name="LGA10-2.7X4.0MM">
-<description>&lt;h3&gt;10-pin LGA package - 2.7 x 4.0mm, 0.6mm pitch&lt;/h3&gt;
-&lt;p&gt;Package specifications:
-&lt;ul&gt;&lt;li&gt;Pin Count: 10 (+ exposed pad)&lt;/li&gt;
-&lt;li&gt;Dimensions: 2.7mm x 4.0mm x 1.1mm&lt;/li&gt;
-&lt;li&gt;Pitch: 0.6mm&lt;/li&gt;
-&lt;/ul&gt;&lt;/p&gt;
-&lt;p&gt;Used by:
-&lt;ul&gt;&lt;li&gt;CCS811&lt;/li&gt;&lt;/ul&gt;</description>
+<package name="LGA10">
+<circle x="-1.8" y="2.3" radius="0.25495" width="0" layer="21"/>
 <wire x1="1.35" y1="2" x2="-1.35" y2="2" width="0.127" layer="51"/>
 <wire x1="-1.35" y1="2" x2="-1.35" y2="-2" width="0.127" layer="51"/>
 <wire x1="-1.35" y1="-2" x2="1.35" y2="-2" width="0.127" layer="51"/>
 <wire x1="1.35" y1="-2" x2="1.35" y2="2" width="0.127" layer="51"/>
+<wire x1="-1.6" y1="2.1" x2="-1.6" y2="-2.1" width="0.127" layer="21"/>
+<wire x1="1.6" y1="2.1" x2="-1.6" y2="2.1" width="0.127" layer="21"/>
+<wire x1="1.6" y1="-2.1" x2="1.6" y2="2.1" width="0.127" layer="21"/>
+<wire x1="-1.6" y1="-2.1" x2="1.6" y2="-2.1" width="0.127" layer="21"/>
 <rectangle x1="0.85" y1="-0.15" x2="1.35" y2="0.15" layer="51"/>
 <rectangle x1="0.85" y1="0.45" x2="1.35" y2="0.75" layer="51"/>
 <rectangle x1="0.85" y1="1.05" x2="1.35" y2="1.35" layer="51"/>
 <rectangle x1="0.85" y1="-0.75" x2="1.35" y2="-0.45" layer="51"/>
 <rectangle x1="0.85" y1="-1.35" x2="1.35" y2="-1.05" layer="51"/>
-<rectangle x1="-1.35" y1="-0.15" x2="-0.85" y2="0.15" layer="51" rot="R180"/>
-<rectangle x1="-1.35" y1="-0.75" x2="-0.85" y2="-0.45" layer="51" rot="R180"/>
-<rectangle x1="-1.35" y1="-1.35" x2="-0.85" y2="-1.05" layer="51" rot="R180"/>
-<rectangle x1="-1.35" y1="0.45" x2="-0.85" y2="0.75" layer="51" rot="R180"/>
-<rectangle x1="-1.35" y1="1.05" x2="-0.85" y2="1.35" layer="51" rot="R180"/>
-<polygon width="0.001" layer="51">
-<vertex x="0.6" y="1.2"/>
-<vertex x="0.6" y="-1.2"/>
-<vertex x="-0.6" y="-1.2"/>
-<vertex x="-0.6" y="0.9"/>
-<vertex x="-0.3" y="1.2"/>
-</polygon>
+<rectangle x1="-1.35" y1="-0.15" x2="-0.85" y2="0.15" layer="51"/>
+<rectangle x1="-1.35" y1="-0.75" x2="-0.85" y2="-0.45" layer="51"/>
+<rectangle x1="-1.35" y1="-1.35" x2="-0.85" y2="-1.05" layer="51"/>
+<rectangle x1="-1.35" y1="0.45" x2="-0.85" y2="0.75" layer="51"/>
+<rectangle x1="-1.35" y1="1.05" x2="-0.85" y2="1.35" layer="51"/>
+<rectangle x1="-0.3589625" y1="-0.3" x2="0.3589625" y2="0.4" layer="31"/>
 <smd name="1" x="-1.1" y="1.2" dx="0.7" dy="0.4" layer="1"/>
-<smd name="EP" x="0" y="0" dx="1.25" dy="2.45" layer="1" stop="no" thermals="no" cream="no"/>
-<polygon width="0.05" layer="29">
-<vertex x="-0.625" y="-1.225"/>
-<vertex x="-0.625" y="0.95"/>
-<vertex x="-0.35" y="1.225"/>
-<vertex x="0.625" y="1.225"/>
-<vertex x="0.625" y="-1.225"/>
-</polygon>
-<wire x1="-1.6" y1="2.1" x2="-1.6" y2="-2.1" width="0.127" layer="21"/>
-<wire x1="1.6" y1="2.1" x2="-1.6" y2="2.1" width="0.127" layer="21"/>
-<wire x1="1.6" y1="-2.1" x2="1.6" y2="2.1" width="0.127" layer="21"/>
-<wire x1="-1.6" y1="-2.1" x2="1.6" y2="-2.1" width="0.127" layer="21"/>
-<circle x="-1.8" y="2.3" radius="0.25495" width="0" layer="21"/>
 <smd name="2" x="-1.1" y="0.6" dx="0.7" dy="0.4" layer="1"/>
 <smd name="3" x="-1.1" y="0" dx="0.7" dy="0.4" layer="1"/>
 <smd name="4" x="-1.1" y="-0.6" dx="0.7" dy="0.4" layer="1"/>
@@ -9749,9 +9727,23 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <smd name="8" x="1.1" y="0" dx="0.7" dy="0.4" layer="1" rot="R180"/>
 <smd name="9" x="1.1" y="0.6" dx="0.7" dy="0.4" layer="1" rot="R180"/>
 <smd name="10" x="1.1" y="1.2" dx="0.7" dy="0.4" layer="1" rot="R180"/>
-<rectangle x1="-0.3589625" y1="-0.70385" x2="0.3589625" y2="0.70385" layer="31"/>
-<text x="0" y="2.286" size="0.6096" layer="25" ratio="20" align="bottom-center">&gt;Name</text>
-<text x="0" y="-2.286" size="0.6096" layer="27" ratio="20" align="top-center">&gt;Value</text>
+<smd name="EP" x="0" y="0" dx="1.1" dy="2.45" layer="1" stop="no" thermals="no" cream="no"/>
+<text x="-1.27" y="2.54" size="0.6096" layer="25" ratio="20">&gt;Name</text>
+<text x="-1.27" y="-3.175" size="0.6096" layer="27" ratio="20">&gt;Value</text>
+<polygon width="0.001" layer="51">
+<vertex x="0.6" y="1.2"/>
+<vertex x="0.6" y="-1.2"/>
+<vertex x="-0.6" y="-1.2"/>
+<vertex x="-0.6" y="0.9"/>
+<vertex x="-0.3" y="1.2"/>
+</polygon>
+<polygon width="0.05" layer="29">
+<vertex x="-0.625" y="-1.225"/>
+<vertex x="-0.625" y="0.95"/>
+<vertex x="-0.35" y="1.225"/>
+<vertex x="0.625" y="1.225"/>
+<vertex x="0.625" y="-1.225"/>
+</polygon>
 </package>
 <package name="AXIAL-0.1">
 <description>&lt;h3&gt;AXIAL-0.1&lt;/h3&gt;
@@ -9785,29 +9777,26 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </packages>
 <symbols>
 <symbol name="CCS811">
-<description>&lt;h3&gt;AMS CCS811 &amp;ndash; I&lt;sup&gt;2&lt;/sup&gt;C Digital Gas Sensor&lt;/h3&gt;
-&lt;p&gt;Ultra-Low Power Digital Gas Sensor for Monitoring Indoor Air Quality&lt;/p&gt;
-&lt;p&gt;&lt;a href=http://ams.com/eng/Products/Environmental-Sensors/Gas-Sensors/CCS811&gt;AMS Product Page&lt;/a&gt;&lt;/p&gt;</description>
-<pin name="!RESET!" x="-12.7" y="2.54" length="short"/>
-<pin name="!INT!" x="12.7" y="0" length="short" rot="R180"/>
-<pin name="PWM" x="-12.7" y="-5.08" length="short"/>
-<pin name="SENSE" x="-12.7" y="-2.54" length="short"/>
-<pin name="VDD" x="-12.7" y="7.62" length="short"/>
-<pin name="ADDR" x="12.7" y="-10.16" length="short" rot="R180"/>
-<pin name="!WAKE!" x="12.7" y="2.54" length="short" rot="R180"/>
-<pin name="AUX" x="12.7" y="-5.08" length="short" rot="R180"/>
-<pin name="SDA" x="12.7" y="7.62" length="short" rot="R180"/>
-<pin name="SCL" x="12.7" y="5.08" length="short" rot="R180"/>
-<pin name="GND" x="-12.7" y="-10.16" length="short"/>
 <wire x1="-10.16" y1="10.16" x2="-10.16" y2="-12.7" width="0.254" layer="94"/>
 <wire x1="-10.16" y1="-12.7" x2="10.16" y2="-12.7" width="0.254" layer="94"/>
 <wire x1="10.16" y1="-12.7" x2="10.16" y2="10.16" width="0.254" layer="94"/>
 <wire x1="10.16" y1="10.16" x2="-10.16" y2="10.16" width="0.254" layer="94"/>
+<wire x1="-3.556" y1="-5.08" x2="0" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="0" y1="-5.08" x2="0" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="0" y1="-2.54" x2="-1.016" y2="-2.54" width="0.254" layer="94"/>
+<pin name="!INT!" x="12.7" y="0" length="short" rot="R180"/>
+<pin name="!RESET!" x="-12.7" y="2.54" length="short"/>
+<pin name="!WAKE!" x="12.7" y="2.54" length="short" rot="R180"/>
+<pin name="ADDR" x="12.7" y="-10.16" length="short" rot="R180"/>
+<pin name="AUX" x="12.7" y="-5.08" length="short" rot="R180"/>
+<pin name="GND" x="-12.7" y="-10.16" length="short"/>
+<pin name="PWM" x="-12.7" y="-5.08" length="short"/>
+<pin name="SCL" x="12.7" y="5.08" length="short" rot="R180"/>
+<pin name="SDA" x="12.7" y="7.62" length="short" rot="R180"/>
+<pin name="SENSE" x="-12.7" y="-2.54" length="short"/>
+<pin name="VDD" x="-12.7" y="7.62" length="short"/>
 <text x="-10.16" y="10.414" size="1.778" layer="95" font="vector">&gt;Name</text>
-<text x="-10.16" y="-12.954" size="1.778" layer="96" font="vector" align="top-left">&gt;Value</text>
-<wire x1="-3.556" y1="-5.08" x2="0" y2="-5.08" width="0.254" layer="94" style="shortdash"/>
-<wire x1="0" y1="-5.08" x2="0" y2="-2.54" width="0.254" layer="94" style="shortdash"/>
-<wire x1="0" y1="-2.54" x2="-1.016" y2="-2.54" width="0.254" layer="94" style="shortdash"/>
+<text x="-10.16" y="-15.494" size="1.778" layer="96" font="vector">&gt;Value</text>
 </symbol>
 <symbol name="NTC-THERMISTOR">
 <description>&lt;h3&gt;NTC Thermistor&lt;/h3&gt;
@@ -9836,26 +9825,27 @@ You are welcome to use this library for commercial purposes. For attribution, we
 &lt;p&gt;&lt;b&gt;SparkFun Products:&lt;/b&gt;
 &lt;ul&gt;&lt;li&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/p&gt;</description>
 <gates>
-<gate name="G$1" symbol="CCS811" x="0" y="0"/>
+<gate name="U1" symbol="CCS811" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="LGA10-2.7X4.0MM">
+<device name="" package="LGA10">
 <connects>
-<connect gate="G$1" pin="!INT!" pad="3"/>
-<connect gate="G$1" pin="!RESET!" pad="2"/>
-<connect gate="G$1" pin="!WAKE!" pad="7"/>
-<connect gate="G$1" pin="ADDR" pad="1"/>
-<connect gate="G$1" pin="AUX" pad="8"/>
-<connect gate="G$1" pin="GND" pad="EP"/>
-<connect gate="G$1" pin="PWM" pad="4"/>
-<connect gate="G$1" pin="SCL" pad="10"/>
-<connect gate="G$1" pin="SDA" pad="9"/>
-<connect gate="G$1" pin="SENSE" pad="5"/>
-<connect gate="G$1" pin="VDD" pad="6"/>
+<connect gate="U1" pin="!INT!" pad="3"/>
+<connect gate="U1" pin="!RESET!" pad="2"/>
+<connect gate="U1" pin="!WAKE!" pad="7"/>
+<connect gate="U1" pin="ADDR" pad="1"/>
+<connect gate="U1" pin="AUX" pad="8"/>
+<connect gate="U1" pin="GND" pad="EP"/>
+<connect gate="U1" pin="PWM" pad="4"/>
+<connect gate="U1" pin="SCL" pad="10"/>
+<connect gate="U1" pin="SDA" pad="9"/>
+<connect gate="U1" pin="SENSE" pad="5"/>
+<connect gate="U1" pin="VDD" pad="6"/>
 </connects>
 <technologies>
 <technology name="">
-<attribute name="PROD_ID" value="IC-13607"/>
+<attribute name="PROD_ID" value="IC-13607" constant="no"/>
+<attribute name="VALUE" value="CCS811" constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -10001,7 +9991,7 @@ SparkFun SKU: SEN-00250</text>
 <instance part="FD2" gate="G$1" x="238.76" y="30.48"/>
 <instance part="R2" gate="G$1" x="55.88" y="139.7" rot="R90"/>
 <instance part="J2" gate="J$1" x="106.68" y="48.26" rot="R180"/>
-<instance part="U2" gate="G$1" x="78.74" y="129.54"/>
+<instance part="U2" gate="U1" x="78.74" y="129.54"/>
 <instance part="R1" gate="G$1" x="96.52" y="38.1" rot="R90"/>
 <instance part="GND1" gate="1" x="96.52" y="27.94" rot="MR0"/>
 <instance part="LOGO1" gate="G$1" x="228.6" y="48.26"/>
@@ -10014,7 +10004,7 @@ SparkFun SKU: SEN-00250</text>
 <pinref part="GND3" gate="1" pin="GND"/>
 <wire x1="66.04" y1="119.38" x2="63.5" y2="119.38" width="0.1524" layer="91"/>
 <wire x1="63.5" y1="119.38" x2="63.5" y2="116.84" width="0.1524" layer="91"/>
-<pinref part="U2" gate="G$1" pin="GND"/>
+<pinref part="U2" gate="U1" pin="GND"/>
 </segment>
 <segment>
 <pinref part="J8" gate="G$1" pin="1"/>
@@ -10047,7 +10037,7 @@ SparkFun SKU: SEN-00250</text>
 <segment>
 <wire x1="91.44" y1="134.62" x2="93.98" y2="134.62" width="0.1524" layer="91"/>
 <label x="93.98" y="134.62" size="1.27" layer="95" font="vector" xref="yes"/>
-<pinref part="U2" gate="G$1" pin="SCL"/>
+<pinref part="U2" gate="U1" pin="SCL"/>
 </segment>
 <segment>
 <pinref part="R14" gate="G$1" pin="1"/>
@@ -10065,7 +10055,7 @@ SparkFun SKU: SEN-00250</text>
 <segment>
 <wire x1="91.44" y1="137.16" x2="93.98" y2="137.16" width="0.1524" layer="91"/>
 <label x="93.98" y="137.16" size="1.27" layer="95" font="vector" xref="yes"/>
-<pinref part="U2" gate="G$1" pin="SDA"/>
+<pinref part="U2" gate="U1" pin="SDA"/>
 </segment>
 <segment>
 <pinref part="R13" gate="G$1" pin="1"/>
@@ -10085,7 +10075,7 @@ SparkFun SKU: SEN-00250</text>
 <wire x1="66.04" y1="137.16" x2="63.5" y2="137.16" width="0.1524" layer="91"/>
 <pinref part="SUPPLY3" gate="G$1" pin="3.3V"/>
 <wire x1="63.5" y1="137.16" x2="63.5" y2="147.32" width="0.1524" layer="91"/>
-<pinref part="U2" gate="G$1" pin="VDD"/>
+<pinref part="U2" gate="U1" pin="VDD"/>
 </segment>
 <segment>
 <pinref part="C2" gate="G$1" pin="1"/>
@@ -10121,7 +10111,7 @@ SparkFun SKU: SEN-00250</text>
 <junction x="55.88" y="132.08"/>
 <label x="53.34" y="132.08" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
 <pinref part="R2" gate="G$1" pin="1"/>
-<pinref part="U2" gate="G$1" pin="!RESET!"/>
+<pinref part="U2" gate="U1" pin="!RESET!"/>
 </segment>
 <segment>
 <wire x1="99.06" y1="45.72" x2="93.98" y2="45.72" width="0.1524" layer="91"/>
@@ -10137,14 +10127,14 @@ SparkFun SKU: SEN-00250</text>
 <pinref part="JP2" gate="G$1" pin="2"/>
 <wire x1="106.68" y1="116.84" x2="106.68" y2="119.38" width="0.1524" layer="91"/>
 <junction x="106.68" y="119.38"/>
-<pinref part="U2" gate="G$1" pin="ADDR"/>
+<pinref part="U2" gate="U1" pin="ADDR"/>
 </segment>
 </net>
 <net name="AUX" class="0">
 <segment>
 <wire x1="91.44" y1="124.46" x2="93.98" y2="124.46" width="0.1524" layer="91"/>
 <label x="93.98" y="124.46" size="1.27" layer="95" font="vector" xref="yes"/>
-<pinref part="U2" gate="G$1" pin="AUX"/>
+<pinref part="U2" gate="U1" pin="AUX"/>
 </segment>
 <segment>
 <label x="215.9" y="119.38" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
@@ -10160,7 +10150,7 @@ SparkFun SKU: SEN-00250</text>
 <segment>
 <wire x1="91.44" y1="129.54" x2="93.98" y2="129.54" width="0.1524" layer="91"/>
 <label x="93.98" y="129.54" size="1.27" layer="95" font="vector" xref="yes"/>
-<pinref part="U2" gate="G$1" pin="!INT!"/>
+<pinref part="U2" gate="U1" pin="!INT!"/>
 </segment>
 <segment>
 <wire x1="99.06" y1="48.26" x2="93.98" y2="48.26" width="0.1524" layer="91"/>
@@ -10172,7 +10162,7 @@ SparkFun SKU: SEN-00250</text>
 <segment>
 <wire x1="91.44" y1="132.08" x2="93.98" y2="132.08" width="0.1524" layer="91"/>
 <label x="93.98" y="132.08" size="1.27" layer="95" font="vector" xref="yes"/>
-<pinref part="U2" gate="G$1" pin="!WAKE!"/>
+<pinref part="U2" gate="U1" pin="!WAKE!"/>
 </segment>
 <segment>
 <wire x1="99.06" y1="50.8" x2="96.52" y2="50.8" width="0.1524" layer="91"/>
@@ -10192,8 +10182,8 @@ SparkFun SKU: SEN-00250</text>
 <wire x1="63.5" y1="127" x2="58.42" y2="127" width="0.1524" layer="91"/>
 <junction x="63.5" y="127"/>
 <label x="58.42" y="127" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
-<pinref part="U2" gate="G$1" pin="PWM"/>
-<pinref part="U2" gate="G$1" pin="SENSE"/>
+<pinref part="U2" gate="U1" pin="PWM"/>
+<pinref part="U2" gate="U1" pin="SENSE"/>
 </segment>
 <segment>
 <label x="215.9" y="101.6" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
@@ -10221,6 +10211,12 @@ SparkFun SKU: SEN-00250</text>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="104,1,45.72,35.56,J8,1,GND,,,"/>
+<approved hash="104,1,45.72,38.1,J8,2,3.3V,,,"/>
+<approved hash="113,1,50.2073,40.5807,J8,,,,,"/>
+<approved hash="113,1,102.277,46.9223,J2,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 <compatibility>

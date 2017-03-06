@@ -6,9 +6,9 @@
 <setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.005" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.001" altunitdist="inch" altunit="inch"/>
 <layers>
-<layer number="1" name="Top" color="4" fill="1" visible="no" active="yes"/>
+<layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
 <layer number="3" name="Route3" color="4" fill="3" visible="no" active="no"/>
 <layer number="4" name="Route4" color="1" fill="4" visible="no" active="no"/>
@@ -28,17 +28,17 @@
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="21" name="tPlace" color="16" fill="1" visible="no" active="yes"/>
+<layer number="21" name="tPlace" color="16" fill="1" visible="yes" active="yes"/>
 <layer number="22" name="bPlace" color="14" fill="1" visible="yes" active="yes"/>
 <layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="yes"/>
-<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="yes"/>
 <layer number="25" name="tNames" color="7" fill="1" visible="no" active="yes"/>
 <layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
-<layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
+<layer number="29" name="tStop" color="7" fill="3" visible="yes" active="yes"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
-<layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
+<layer number="31" name="tCream" color="7" fill="4" visible="yes" active="yes"/>
 <layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
 <layer number="33" name="tFinish" color="6" fill="3" visible="no" active="yes"/>
 <layer number="34" name="bFinish" color="6" fill="6" visible="no" active="yes"/>
@@ -46,7 +46,7 @@
 <layer number="36" name="bGlue" color="7" fill="5" visible="no" active="yes"/>
 <layer number="37" name="tTest" color="7" fill="1" visible="no" active="yes"/>
 <layer number="38" name="bTest" color="7" fill="1" visible="no" active="yes"/>
-<layer number="39" name="tKeepout" color="4" fill="11" visible="no" active="yes"/>
+<layer number="39" name="tKeepout" color="4" fill="11" visible="yes" active="yes"/>
 <layer number="40" name="bKeepout" color="1" fill="11" visible="no" active="yes"/>
 <layer number="41" name="tRestrict" color="4" fill="10" visible="no" active="yes"/>
 <layer number="42" name="bRestrict" color="1" fill="10" visible="no" active="yes"/>
@@ -54,7 +54,7 @@
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
 <layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
 <layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
-<layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
+<layer number="47" name="Measures" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="48" name="Document" color="7" fill="1" visible="no" active="yes"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="no" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
@@ -166,19 +166,25 @@
 <text x="11.43" y="2.794" size="1.016" layer="22" font="vector" ratio="15" rot="MR90" align="center-left">SDA</text>
 <text x="13.97" y="2.794" size="1.016" layer="22" font="vector" ratio="15" rot="MR90" align="center-left">3.3V</text>
 <text x="16.51" y="2.794" size="1.016" layer="22" font="vector" ratio="15" rot="MR90" align="center-left">GND</text>
-<text x="9.017" y="16.51" size="1.2065" layer="21" ratio="15" align="center">CCS811</text>
+<text x="9.017" y="16.51" size="1.2065" layer="21" font="vector" ratio="15" align="center">CCS811</text>
 <text x="17.399" y="10.287" size="1.016" layer="16" ratio="20" rot="SMR270" align="bottom-center">v10</text>
-<text x="4.191" y="10.287" size="0.889" layer="22" ratio="15" rot="MR90" align="bottom-center">ADDR</text>
+<text x="4.191" y="10.287" size="0.889" layer="22" font="vector" ratio="15" rot="MR90" align="bottom-center">ADDR</text>
 <text x="16.51" y="-21.59" size="1.778" layer="51">Nathan Seidle</text>
-<text x="17.399" y="10.287" size="1.016" layer="21" ratio="15" rot="R90" align="bottom-center">NTC</text>
-<text x="9.017" y="14.859" size="1.016" layer="21" ratio="15" align="center">Air Quality</text>
-<text x="0.381" y="10.287" size="0.889" layer="22" ratio="15" rot="MR90" align="bottom-center">I2C PU</text>
+<text x="17.399" y="10.287" size="1.016" layer="21" font="vector" ratio="15" rot="R90" align="bottom-center">NTC</text>
+<text x="9.017" y="14.859" size="1.016" layer="21" font="vector" ratio="15" align="center">Air Quality</text>
+<text x="0.381" y="10.287" size="0.889" layer="22" font="vector" ratio="15" rot="MR90" align="bottom-center">I2C PU</text>
 <text x="6.35" y="2.794" size="1.016" layer="21" font="vector" ratio="15" rot="R90" align="center-left">!WAK</text>
 <text x="3.81" y="2.794" size="1.016" layer="21" font="vector" ratio="15" rot="R90" align="center-left">!INT</text>
 <text x="1.27" y="2.794" size="1.016" layer="21" font="vector" ratio="15" rot="R90" align="center-left">!RST</text>
 <text x="6.35" y="2.794" size="1.016" layer="22" font="vector" ratio="15" rot="MR90" align="center-left">!WAK</text>
 <text x="3.81" y="2.794" size="1.016" layer="22" font="vector" ratio="15" rot="MR90" align="center-left">!INT</text>
 <text x="1.27" y="2.794" size="1.016" layer="22" font="vector" ratio="15" rot="MR90" align="center-left">!RST</text>
+<dimension x1="2.54" y1="15.24" x2="0" y2="0" x3="-2.54" y3="7.62" textsize="1.778" layer="47" dtype="vertical" unit="inch"/>
+<dimension x1="0" y1="17.78" x2="0" y2="0" x3="-6.35" y3="8.89" textsize="1.778" layer="47" dtype="vertical" unit="inch"/>
+<dimension x1="2.54" y1="15.24" x2="0" y2="15.24" x3="1.27" y3="20.32" textsize="1.778" layer="47" dtype="horizontal" unit="inch"/>
+<dimension x1="15.24" y1="15.24" x2="0" y2="15.24" x3="7.62" y3="24.13" textsize="1.778" layer="47" dtype="horizontal" unit="inch"/>
+<dimension x1="17.78" y1="17.78" x2="0" y2="17.78" x3="8.89" y3="27.94" textsize="1.778" layer="47" dtype="horizontal" unit="inch"/>
+<text x="24.13" y="22.86" size="1.778" layer="47">All measurements in inches</text>
 </plain>
 <libraries>
 <library name="SparkFun-Aesthetics">
@@ -603,50 +609,28 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </library>
 <library name="CCS811_Breakout_Temp">
 <packages>
-<package name="LGA10-2.7X4.0MM">
-<description>&lt;h3&gt;10-pin LGA package - 2.7 x 4.0mm, 0.6mm pitch&lt;/h3&gt;
-&lt;p&gt;Package specifications:
-&lt;ul&gt;&lt;li&gt;Pin Count: 10 (+ exposed pad)&lt;/li&gt;
-&lt;li&gt;Dimensions: 2.7mm x 4.0mm x 1.1mm&lt;/li&gt;
-&lt;li&gt;Pitch: 0.6mm&lt;/li&gt;
-&lt;/ul&gt;&lt;/p&gt;
-&lt;p&gt;Used by:
-&lt;ul&gt;&lt;li&gt;CCS811&lt;/li&gt;&lt;/ul&gt;</description>
+<package name="LGA10">
+<circle x="-1.8" y="2.3" radius="0.25495" width="0" layer="21"/>
 <wire x1="1.35" y1="2" x2="-1.35" y2="2" width="0.127" layer="51"/>
 <wire x1="-1.35" y1="2" x2="-1.35" y2="-2" width="0.127" layer="51"/>
 <wire x1="-1.35" y1="-2" x2="1.35" y2="-2" width="0.127" layer="51"/>
 <wire x1="1.35" y1="-2" x2="1.35" y2="2" width="0.127" layer="51"/>
+<wire x1="-1.6" y1="2.1" x2="-1.6" y2="-2.1" width="0.127" layer="21"/>
+<wire x1="1.6" y1="2.1" x2="-1.6" y2="2.1" width="0.127" layer="21"/>
+<wire x1="1.6" y1="-2.1" x2="1.6" y2="2.1" width="0.127" layer="21"/>
+<wire x1="-1.6" y1="-2.1" x2="1.6" y2="-2.1" width="0.127" layer="21"/>
 <rectangle x1="0.85" y1="-0.15" x2="1.35" y2="0.15" layer="51"/>
 <rectangle x1="0.85" y1="0.45" x2="1.35" y2="0.75" layer="51"/>
 <rectangle x1="0.85" y1="1.05" x2="1.35" y2="1.35" layer="51"/>
 <rectangle x1="0.85" y1="-0.75" x2="1.35" y2="-0.45" layer="51"/>
 <rectangle x1="0.85" y1="-1.35" x2="1.35" y2="-1.05" layer="51"/>
-<rectangle x1="-1.35" y1="-0.15" x2="-0.85" y2="0.15" layer="51" rot="R180"/>
-<rectangle x1="-1.35" y1="-0.75" x2="-0.85" y2="-0.45" layer="51" rot="R180"/>
-<rectangle x1="-1.35" y1="-1.35" x2="-0.85" y2="-1.05" layer="51" rot="R180"/>
-<rectangle x1="-1.35" y1="0.45" x2="-0.85" y2="0.75" layer="51" rot="R180"/>
-<rectangle x1="-1.35" y1="1.05" x2="-0.85" y2="1.35" layer="51" rot="R180"/>
-<polygon width="0.001" layer="51">
-<vertex x="0.6" y="1.2"/>
-<vertex x="0.6" y="-1.2"/>
-<vertex x="-0.6" y="-1.2"/>
-<vertex x="-0.6" y="0.9"/>
-<vertex x="-0.3" y="1.2"/>
-</polygon>
+<rectangle x1="-1.35" y1="-0.15" x2="-0.85" y2="0.15" layer="51"/>
+<rectangle x1="-1.35" y1="-0.75" x2="-0.85" y2="-0.45" layer="51"/>
+<rectangle x1="-1.35" y1="-1.35" x2="-0.85" y2="-1.05" layer="51"/>
+<rectangle x1="-1.35" y1="0.45" x2="-0.85" y2="0.75" layer="51"/>
+<rectangle x1="-1.35" y1="1.05" x2="-0.85" y2="1.35" layer="51"/>
+<rectangle x1="-0.3589625" y1="-0.3" x2="0.3589625" y2="0.4" layer="31"/>
 <smd name="1" x="-1.1" y="1.2" dx="0.7" dy="0.4" layer="1"/>
-<smd name="EP" x="0" y="0" dx="1.25" dy="2.45" layer="1" stop="no" thermals="no" cream="no"/>
-<polygon width="0.05" layer="29">
-<vertex x="-0.625" y="-1.225"/>
-<vertex x="-0.625" y="0.95"/>
-<vertex x="-0.35" y="1.225"/>
-<vertex x="0.625" y="1.225"/>
-<vertex x="0.625" y="-1.225"/>
-</polygon>
-<wire x1="-1.6" y1="2.1" x2="-1.6" y2="-2.1" width="0.127" layer="21"/>
-<wire x1="1.6" y1="2.1" x2="-1.6" y2="2.1" width="0.127" layer="21"/>
-<wire x1="1.6" y1="-2.1" x2="1.6" y2="2.1" width="0.127" layer="21"/>
-<wire x1="-1.6" y1="-2.1" x2="1.6" y2="-2.1" width="0.127" layer="21"/>
-<circle x="-1.8" y="2.3" radius="0.25495" width="0" layer="21"/>
 <smd name="2" x="-1.1" y="0.6" dx="0.7" dy="0.4" layer="1"/>
 <smd name="3" x="-1.1" y="0" dx="0.7" dy="0.4" layer="1"/>
 <smd name="4" x="-1.1" y="-0.6" dx="0.7" dy="0.4" layer="1"/>
@@ -656,9 +640,23 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <smd name="8" x="1.1" y="0" dx="0.7" dy="0.4" layer="1" rot="R180"/>
 <smd name="9" x="1.1" y="0.6" dx="0.7" dy="0.4" layer="1" rot="R180"/>
 <smd name="10" x="1.1" y="1.2" dx="0.7" dy="0.4" layer="1" rot="R180"/>
-<rectangle x1="-0.3589625" y1="-0.70385" x2="0.3589625" y2="0.70385" layer="31"/>
-<text x="0" y="2.286" size="0.6096" layer="25" ratio="20" align="bottom-center">&gt;Name</text>
-<text x="0" y="-2.286" size="0.6096" layer="27" ratio="20" align="top-center">&gt;Value</text>
+<smd name="EP" x="0" y="0" dx="1.1" dy="2.45" layer="1" stop="no" thermals="no" cream="no"/>
+<text x="-1.27" y="2.54" size="0.6096" layer="25" ratio="20">&gt;Name</text>
+<text x="-1.27" y="-3.175" size="0.6096" layer="27" ratio="20">&gt;Value</text>
+<polygon width="0.001" layer="51">
+<vertex x="0.6" y="1.2"/>
+<vertex x="0.6" y="-1.2"/>
+<vertex x="-0.6" y="-1.2"/>
+<vertex x="-0.6" y="0.9"/>
+<vertex x="-0.3" y="1.2"/>
+</polygon>
+<polygon width="0.05" layer="29">
+<vertex x="-0.625" y="-1.225"/>
+<vertex x="-0.625" y="0.95"/>
+<vertex x="-0.35" y="1.225"/>
+<vertex x="0.625" y="1.225"/>
+<vertex x="0.625" y="-1.225"/>
+</polygon>
 </package>
 <package name="AXIAL-0.1">
 <description>&lt;h3&gt;AXIAL-0.1&lt;/h3&gt;
@@ -888,14 +886,15 @@ These rules have been curated by SparkFuns DFM commitee. After doing much resear
 <attribute name="SF_ID" value="SEN-00250" x="15.24" y="10.16" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
 <element name="LOGO4" library="SparkFun-Aesthetics" package="OSHW-LOGO-S" value="OSHW-LOGOS" x="8.89" y="7.62" rot="MR0"/>
-<element name="FD1" library="SparkFun-Aesthetics" package="FIDUCIAL-1X2" value="FIDUCIAL1X2" x="0.762" y="17.018"/>
-<element name="FD2" library="SparkFun-Aesthetics" package="FIDUCIAL-1X2" value="FIDUCIAL1X2" x="15.24" y="2.54"/>
+<element name="FD1" library="SparkFun-Aesthetics" package="FIDUCIAL-1X2" value="FIDUCIAL1X2" x="4.826" y="16.891"/>
+<element name="FD2" library="SparkFun-Aesthetics" package="FIDUCIAL-1X2" value="FIDUCIAL1X2" x="15.24" y="3.81"/>
 <element name="R2" library="SparkFun-Resistors" package="0603" value="4.7k" x="6.985" y="6.35" rot="R180">
 <attribute name="PROD_ID" value="RES-07857" x="6.985" y="6.35" size="1.778" layer="27" font="vector" ratio="15" rot="R180" display="off"/>
 </element>
 <element name="J2" library="SparkFun-Connectors" package="1X03_NO_SILK" value="" x="6.35" y="1.27" rot="R180"/>
-<element name="U2" library="CCS811_Breakout_Temp" package="LGA10-2.7X4.0MM" value="CCS811" x="8.89" y="10.16" rot="R90">
+<element name="U2" library="CCS811_Breakout_Temp" package="LGA10" value="CCS811" x="8.89" y="10.16" rot="R90">
 <attribute name="PROD_ID" value="IC-13607" x="8.89" y="10.16" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="VALUE" value="CCS811" x="8.89" y="10.16" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
 <element name="R1" library="SparkFun-Resistors" package="0603" value="100k" x="10.795" y="6.35" rot="R180">
 <attribute name="PROD_ID" value="RES-07828" x="10.795" y="6.35" size="1.778" layer="27" font="vector" ratio="15" rot="R180" display="off"/>
@@ -1186,6 +1185,18 @@ These rules have been curated by SparkFuns DFM commitee. After doing much resear
 <approved hash="19,16,e7c515e714b5e697"/>
 <approved hash="4,1,7ac5630a8c589e97"/>
 <approved hash="4,1,5d8ff037b57019c3"/>
+<approved hash="18,29,bc8baab88abb9c88"/>
+<approved hash="18,29,4a88b8bb98b56a86"/>
+<approved hash="18,29,588656b576b07883"/>
+<approved hash="18,29,768364b044b35680"/>
+<approved hash="18,29,048072b352ae249d"/>
+<approved hash="18,29,4fbf59acb9afafbc"/>
+<approved hash="18,29,b9bc4bafaba159b2"/>
+<approved hash="18,29,abb2a5a145a44bb7"/>
+<approved hash="18,29,85b797a477a765b4"/>
+<approved hash="18,29,f7b481a761ba17a9"/>
+<approved hash="18,29,98268f9fe60a918c"/>
+<approved hash="18,29,106579b0ae26a7cc"/>
 <approved hash="19,16,7273b02699781897"/>
 <approved hash="19,16,7273b02699781897"/>
 <approved hash="19,16,1f8682bcb69776b7"/>
