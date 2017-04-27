@@ -33,7 +33,7 @@ Product Versions
 
 Version History
 ---------------
-* [V 1.0.0](https://github.com/sparkfun/CCS811_Air_Quality_Breakout/releases/tag/V_1.0.0) -- Initial commit of Arduino compatible library.
+* [V 1.0.0](https://github.com/sparkfun/CCS811_Air_Quality_Breakout/tree/V_1.0.0) -- Initial commit of Arduino compatible library.
 
 License Information
 -------------------
