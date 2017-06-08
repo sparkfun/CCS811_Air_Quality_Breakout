@@ -129,7 +129,7 @@ class CCS811:
         value = self.pi.i2c_read_byte_data(self.device, CSS811_STATUS)
         return value & 1 << 3
 
-    def run(self, write_to_file=False):
+    def run(self):
 
         self.setup()
 
@@ -137,11 +137,7 @@ class CCS811:
             if self.data_available():
                 self.read_logorithm_results()
 
-                if write_to_file:
-                    with open("readings.txt", "a") as myfile:
-                        myfile.write("%d, %d \n" % (self.CO2, self.tVOC))
-                else:
-                    print("CO2[%d] tVOC[%d]" % (self.CO2, self.tVOC))
+                print("CO2[%d] tVOC[%d]" % (self.CO2, self.tVOC))
 
             elif self.check_for_error():
                 self.print_error()
@@ -161,4 +157,4 @@ class CCS811:
 
 
 c = CCS811()
-c.run(True)
+c.run()
