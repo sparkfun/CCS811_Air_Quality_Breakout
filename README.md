@@ -13,17 +13,14 @@ Repository Contents
 -------------------
 
 * **/Documentation** - Data sheets, additional product information
-* **/Enclosure** - Enclosure files 
-* **/Firmware** - Example code 
 * **/Hardware** - Eagle design files (.brd, .sch)
-* **/Libraries** - Libraries for use with the <PRODUCT NAME>
 * **/Production** - Production panel files (.brd)
-* **/Software** - Related software for the <PRODUCT NAME>
+* **/Software** - Python scripts for CCS811
 
 Documentation
 --------------
-* **[Library](https://github.com/sparkfun/SparkFun_CCS811_Arduino_Library)** - <LANGUAGE> library for the <PRODUCT NAME>.
-* **[Hookup Guide](https://learn.sparkfun.com/tutorials/ccs811-air-quality-breakout-hookup-guide)** - Basic hookup guide for the <PRODUCT NAME>.
+* **[Library](https://github.com/sparkfun/SparkFun_CCS811_Arduino_Library)** - Arduino library for the CCS811.
+* **[Hookup Guide](https://learn.sparkfun.com/tutorials/ccs811-air-quality-breakout-hookup-guide)** - Basic hookup guide for the CCS811.
 * **[SparkFun Fritzing repo](https://github.com/sparkfun/Fritzing_Parts)** - Fritzing diagrams for SparkFun products.
 * **[SparkFun 3D Model repo](https://github.com/sparkfun/3D_Models)** - 3D models of SparkFun products. 
 
@@ -47,5 +44,3 @@ If you have any questions or concerns on licensing, please contact techsupport@s
 Distributed as-is; no warranty is given.
 
 - Your friends at SparkFun.
-
-_<COLLABORATION CREDIT>_
